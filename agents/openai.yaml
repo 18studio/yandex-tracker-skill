@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yandex Tracker"
+  short_description: "Manage Yandex Tracker spaces via API"
+  default_prompt: "Use $yandex-tracker to manage my Tracker space through the API."

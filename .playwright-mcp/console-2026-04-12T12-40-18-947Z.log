@@ -1,0 +1,6 @@
+[    1615ms] [ERROR] The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element. @ https://yandex.ru/support/tracker/en/automation:0
+[    1617ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.ru/support/tracker/en/automation:0
+[    1618ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.ru/support/tracker/en/automation:0
+[    1618ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.ru/support/tracker/en/automation:0
+[    1618ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.ru/support/tracker/en/automation:0
+[    2752ms] [ERROR] Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED @ https://mc.yandex.ru/metrika/tag.js:0
