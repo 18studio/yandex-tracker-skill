@@ -1,5 +1,5 @@
 ---
-name: yandex-tracker
+name: Yandex Tracker
 description: "Manage Yandex Tracker spaces through the REST API. Use when Codex needs to work with any documented Tracker API function: issues, issue filters, checklists, comments, attachments, bulk operations, fields, projects, portfolios, goals, queues, automation, boards, dashboards, components, issue types, statuses, resolutions, priorities, worklogs, imports, links to external applications, or users in a Yandex Tracker organization."
 ---
 
