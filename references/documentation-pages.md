@@ -1,7 +1,7 @@
 # Tracker API Documentation Pages
 
-This page indexes the official Yandex Tracker API documentation so the skill can jump to the right section quickly.
-It is organized to match the documentation navigation and to cover the whole public API surface.
+This page indexes the locally captured Yandex Tracker API reference structure so the skill can jump to the right section quickly.
+It is organized to mirror the documented API navigation and to cover the whole public API surface without requiring live site access.
 
 ## Core Pages
 

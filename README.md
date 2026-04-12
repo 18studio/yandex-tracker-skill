@@ -7,17 +7,18 @@ Skill and helper script for working with Yandex Tracker through the public REST 
 - `SKILL.md` defines the skill behavior, routing rules, and documentation workflow.
 - `scripts/tracker_api.py` is a stdlib-only CLI for authenticated Tracker API requests.
 - `references/tracker-api.md` summarizes the core API contract and common pitfalls.
-- `references/documentation-pages.md` maps API task areas to official documentation pages.
-- `references/support-docs-index.md` maps product and UI questions to the official support documentation pages.
+- `references/documentation-pages.md` maps API task areas to the local API reference index.
+- `references/support-docs-index.md` maps product and UI questions to the current locally captured support-doc hierarchy.
+- `references/tracker-docs-site-map.md` is the full Playwright-generated site map of the Tracker documentation menu.
 
 ## Requirements
 
 - Python 3.11+
 - A Yandex Tracker token:
-  - `TRACKER_OAUTH_TOKEN` or `TRACKER_TOKEN`
+  - `TRACKER_TOKEN` or `TRACKER_OAUTH_TOKEN`
   - `TRACKER_IAM_TOKEN`
 - Exactly one organization header source:
-  - `TRACKER_ORG_ID`
+  - `TRACKER_TRACKER_ORG_ID` or `TRACKER_ORG_ID`
   - `TRACKER_CLOUD_ORG_ID`
 
 ## Quick Start
@@ -25,19 +26,19 @@ Skill and helper script for working with Yandex Tracker through the public REST 
 Inspect the current user:
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
 ```
 
 Fetch an issue:
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
 ```
 
 Search issues:
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
   --method POST \
   --data '{"filter":{"queue":"TEST"}}'
 ```
@@ -45,7 +46,7 @@ TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_sea
 Send query parameters and print headers:
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /queues \
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /queues \
   --query perPage=100 \
   --include-status
 ```
@@ -62,12 +63,13 @@ The helper script:
 
 ## Documentation Workflow
 
-Use the local references before re-fetching external docs:
+Use only the local markdown references:
 
 1. Read `references/tracker-api.md` for API mechanics, headers, and update semantics.
-2. Read `references/documentation-pages.md` to find the exact API family or method page.
+2. Read `references/documentation-pages.md` to find the exact API family or method area.
 3. Read `references/support-docs-index.md` for product behavior and UI workflows.
-4. Follow the matching official support page link from `references/support-docs-index.md` when the task depends on product documentation details.
+4. Use `references/tracker-docs-site-map.md` when you need the full documentation tree or need to verify exact menu placement.
+5. If something seems missing, search the local `.md` files in `references/` instead of using the live Tracker site.
 
 ## Notes
 

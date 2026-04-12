@@ -1,55 +1,16 @@
-# Tracker Support Docs Index
+# Tracker Docs Site Map
 
-This file is the local product-docs index for Yandex Tracker.
-It was rebuilt from the fully expanded documentation menu captured by Playwright on 2026-04-12T13:57:38.742Z.
+Captured via Playwright from `https://yandex.ru/support/tracker/en/about-tracker` on 2026-04-12T13:57:38.742Z.
 
-Use this file for Tracker product behavior and UI workflows.
-For REST API work, start with [tracker-api.md](tracker-api.md) and [documentation-pages.md](documentation-pages.md).
+- Top-level sections: 23
+- Unique URLs in expanded TOC: 238
 
-## How To Use This Index
-
-1. Pick the narrowest top-level section that matches the user task.
-2. Drill down to the exact page in that section.
-3. If the task spans multiple areas, read the overview page first and then the specific leaf page.
-4. Do not browse the live Tracker site. Treat this file, [tracker-docs-site-map.md](tracker-docs-site-map.md), and the other local `references/*.md` files as the source of truth for this skill.
-
-## Top-Level Sections
+## Tree
 
 - [How Yandex Tracker works](https://yandex.ru/support/tracker/en/about-tracker)
-- [Enabling and managing access](https://yandex.ru/support/tracker/en/configuration)
-- [Working with Yandex Tracker](https://yandex.ru/support/tracker/en/how-to-use)
-- [Examples of workflow setup](https://yandex.ru/support/tracker/en/guides)
-- [Configuring queues](https://yandex.ru/support/tracker/en/queue-intro)
-- [Working with issues](https://yandex.ru/support/tracker/en/working-with-issues)
-- [Managing issues using an Agile board](https://yandex.ru/support/tracker/en/manager/agile)
-- [Projects, portfolios, and goals](https://yandex.ru/support/tracker/en/entities)
-- [Finding issues](https://yandex.ru/support/tracker/en/search-issues)
-- [Notifications and subscriptions](https://yandex.ru/support/tracker/en/user/notifications)
-- [Yandex Tracker mobile app](https://yandex.ru/support/tracker/en/mobile)
-- [Dashboards and widgets](https://yandex.ru/support/tracker/en/dashboards-and-widgets)
-- [Reports](https://yandex.ru/support/tracker/en/user/dashboard-reports)
-- [Gantt chart](https://yandex.ru/support/tracker/en/gantt/overview)
-- [Automations](https://yandex.ru/support/tracker/en/automation)
-- [Issue and comment templates](https://yandex.ru/support/tracker/en/user/ticket-template)
-- [Configuring an SLA for issues](https://yandex.ru/support/tracker/en/sla-head)
-- [Integration with other services](https://yandex.ru/support/tracker/en/manager/integrations)
-- [Developer tools](https://yandex.ru/support/tracker/en/user/API)
-- [API reference](https://yandex.ru/support/tracker/en/api-ref/about-api)
-- [Managing a Yandex Cloud organization](https://yandex.ru/support/tracker/en/cloud/overview)
-- [FAQ](https://yandex.ru/support/tracker/en/faq)
-- [Support](https://yandex.ru/support/tracker/en/feedback)
-
-## Full Tree
-
-### How Yandex Tracker works
-
-- [Overview](https://yandex.ru/support/tracker/en/about-tracker)
   - [Concepts](https://yandex.ru/support/tracker/en/glossary)
   - [Roles and access rights](https://yandex.ru/support/tracker/en/role-model)
-
-### Enabling and managing access
-
-- [Overview](https://yandex.ru/support/tracker/en/configuration)
+- [Enabling and managing access](https://yandex.ru/support/tracker/en/configuration)
   - [Activating Yandex Tracker](https://yandex.ru/support/tracker/en/enable-tracker)
   - [Adding users](https://yandex.ru/support/tracker/en/add-users)
   - [Configuring access to Yandex Tracker](https://yandex.ru/support/tracker/en/access)
@@ -57,10 +18,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Pricing](https://yandex.ru/support/tracker/en/pricing)
   - [Migrating to Yandex Tracker](https://yandex.ru/support/tracker/en/import)
   - [Deactivating Yandex Tracker](https://yandex.ru/support/tracker/en/disable-tracker)
-
-### Working with Yandex Tracker
-
-- [Overview](https://yandex.ru/support/tracker/en/how-to-use)
+- [Working with Yandex Tracker](https://yandex.ru/support/tracker/en/how-to-use)
   - [Logging in to Yandex Tracker](https://yandex.ru/support/tracker/en/user/login)
   - [Home page](https://yandex.ru/support/tracker/en/user/startpage)
   - [Interactive guide to Yandex Tracker](https://yandex.ru/support/tracker/en/user/quick-guide)
@@ -69,10 +27,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Favorite issues, boards, and dashboards](https://yandex.ru/support/tracker/en/user/favourites)
   - [Personal settings](https://yandex.ru/support/tracker/en/user/personal)
   - [Hotkey descriptions](https://yandex.ru/support/tracker/en/user/hotkeys)
-
-### Examples of workflow setup
-
-- [Overview](https://yandex.ru/support/tracker/en/guides)
+- [Examples of workflow setup](https://yandex.ru/support/tracker/en/guides)
   - [Setting up Yandex Tracker for a development team](https://yandex.ru/support/tracker/en/dev-process)
     - [Creating a queue for a development team](https://yandex.ru/support/tracker/en/dev-process-create-queue)
     - [Structuring issues](https://yandex.ru/support/tracker/en/dev-process-manage-tickets)
@@ -97,10 +52,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
     - [Automating routine actions in issues](https://yandex.ru/support/tracker/en/hr-process-probation-queue)
     - [Setting up regular reminders](https://yandex.ru/support/tracker/en/hr-process-vacations-queue)
     - [Adding a feedback form](https://yandex.ru/support/tracker/en/hr-process-general-queue)
-
-### Configuring queues
-
-- [Overview](https://yandex.ru/support/tracker/en/queue-intro)
+- [Configuring queues](https://yandex.ru/support/tracker/en/queue-intro)
   - [Creating a queue](https://yandex.ru/support/tracker/en/manager/create-queue)
   - [Queue templates](https://yandex.ru/support/tracker/en/manager/work-process)
   - [Changing basic queue settings](https://yandex.ru/support/tracker/en/manager/edit-queue-general)
@@ -122,10 +74,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Local issue fields](https://yandex.ru/support/tracker/en/local-fields)
   - [Viewing the history of queue changes](https://yandex.ru/support/tracker/en/manager/queue-history)
   - [Deleting a queue](https://yandex.ru/support/tracker/en/manager/delete-queue)
-
-### Working with issues
-
-- [Overview](https://yandex.ru/support/tracker/en/working-with-issues)
+- [Working with issues](https://yandex.ru/support/tracker/en/working-with-issues)
   - [Creating an issue](https://yandex.ru/support/tracker/en/user/create-ticket)
     - [Copying an issue](https://yandex.ru/support/tracker/en/user/clone)
     - [Creating an issue via email](https://yandex.ru/support/tracker/en/user/create-ticket-by-mail)
@@ -158,10 +107,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Exporting an issue to DOC](https://yandex.ru/support/tracker/en/user/export-to-doc)
   - [Creating an issue chat in Yandex Messenger](https://yandex.ru/support/tracker/en/user/chat)
   - [Deleting an issue](https://yandex.ru/support/tracker/en/user/ticket-cancel)
-
-### Managing issues using an Agile board
-
-- [Overview](https://yandex.ru/support/tracker/en/manager/agile)
+- [Managing issues using an Agile board](https://yandex.ru/support/tracker/en/manager/agile)
   - [Creating a board](https://yandex.ru/support/tracker/en/manager/agile-create)
   - [Working with issues on a board](https://yandex.ru/support/tracker/en/manager/agile-issues)
   - [Configuring a board](https://yandex.ru/support/tracker/en/manager/agile-set-board)
@@ -172,10 +118,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
     - [Planning poker](https://yandex.ru/support/tracker/en/manager/poker)
     - [Burndown charts](https://yandex.ru/support/tracker/en/manager/burndown-diagram)
   - [How to set up access to a board](https://yandex.ru/support/tracker/en/manager/agile-access)
-
-### Projects, portfolios, and goals
-
-- [Overview](https://yandex.ru/support/tracker/en/entities)
+- [Projects, portfolios, and goals](https://yandex.ru/support/tracker/en/entities)
   - [Goals](https://yandex.ru/support/tracker/en/goals/goals-start)
     - [My goals](https://yandex.ru/support/tracker/en/goals/goals-list)
     - [Managing goals](https://yandex.ru/support/tracker/en/goals/goals-settings)
@@ -189,29 +132,20 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
     - [Managing portfolios](https://yandex.ru/support/tracker/en/manager/create-portfolio)
   - [Viewing the revision history for a project, portfolio, or goal](https://yandex.ru/support/tracker/en/manager/history)
   - [Managing access in projects, portfolios, and goals](https://yandex.ru/support/tracker/en/manager/access)
-
-### Finding issues
-
-- [Overview](https://yandex.ru/support/tracker/en/search-issues)
+- [Finding issues](https://yandex.ru/support/tracker/en/search-issues)
   - [Finding issues by key or name](https://yandex.ru/support/tracker/en/user/search-task)
   - [Finding my issues](https://yandex.ru/support/tracker/en/user/default-filters)
   - [Finding issues in queues](https://yandex.ru/support/tracker/en/manager/quick-filters)
   - [Creating and configuring a filter](https://yandex.ru/support/tracker/en/user/create-filter)
   - [Query language](https://yandex.ru/support/tracker/en/user/query-filter)
   - [Exporting an issue report](https://yandex.ru/support/tracker/en/user/reports)
-
-### Notifications and subscriptions
-
-- [Overview](https://yandex.ru/support/tracker/en/user/notifications)
+- [Notifications and subscriptions](https://yandex.ru/support/tracker/en/user/notifications)
   - [Setting up subscriptions](https://yandex.ru/support/tracker/en/user/notification-constructor)
   - [Enabling browser notifications](https://yandex.ru/support/tracker/en/user/push-notifications)
   - [Configuring notifications in Telegram](https://yandex.ru/support/tracker/en/user/notification-telegram)
   - [Setting up update reports](https://yandex.ru/support/tracker/en/user/notification-digest)
   - [Sending notifications to mailboxes in your domain](https://yandex.ru/support/tracker/en/manager/mail-notifications)
-
-### Yandex Tracker mobile app
-
-- [Overview](https://yandex.ru/support/tracker/en/mobile)
+- [Yandex Tracker mobile app](https://yandex.ru/support/tracker/en/mobile)
   - [Logging in to the mobile app](https://yandex.ru/support/tracker/en/mobile/login)
   - [Personal settings](https://yandex.ru/support/tracker/en/mobile/personal)
   - [Creating a queue](https://yandex.ru/support/tracker/en/mobile/create-queue)
@@ -232,10 +166,7 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Running a macro](https://yandex.ru/support/tracker/en/mobile/run-macro)
   - [Notifications](https://yandex.ru/support/tracker/en/mobile/notifications)
   - [Setting up reminders](https://yandex.ru/support/tracker/en/mobile/reminder)
-
-### Dashboards and widgets
-
-- [Overview](https://yandex.ru/support/tracker/en/dashboards-and-widgets)
+- [Dashboards and widgets](https://yandex.ru/support/tracker/en/dashboards-and-widgets)
   - [Dashboards](https://yandex.ru/support/tracker/en/user/dashboard)
     - [Creating a dashboard](https://yandex.ru/support/tracker/en/user/create-dashboard)
     - [Editing a dashboard](https://yandex.ru/support/tracker/en/user/edit-dashboard)
@@ -254,25 +185,16 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
     - [Cycle time](https://yandex.ru/support/tracker/en/user/cycle-time)
     - [Flow](https://yandex.ru/support/tracker/en/user/flow)
     - [Team performance](https://yandex.ru/support/tracker/en/user/velocity)
-
-### Reports
-
-- [Overview](https://yandex.ru/support/tracker/en/user/dashboard-reports)
+- [Reports](https://yandex.ru/support/tracker/en/user/dashboard-reports)
   - [Issue report](https://yandex.ru/support/tracker/en/user/ticket-report)
   - [Report on time spent](https://yandex.ru/support/tracker/en/user/time-spent-report)
-
-### Gantt chart
-
-- [Overview](https://yandex.ru/support/tracker/en/gantt/overview)
+- [Gantt chart](https://yandex.ru/support/tracker/en/gantt/overview)
   - [For a filter](https://yandex.ru/support/tracker/en/gantt/search)
   - [For a queue](https://yandex.ru/support/tracker/en/gantt/queue)
   - [For a project](https://yandex.ru/support/tracker/en/gantt/project)
   - [For a project list](https://yandex.ru/support/tracker/en/gantt/list-of-projects)
   - [For a project portfolio](https://yandex.ru/support/tracker/en/gantt/portfolio)
-
-### Automations
-
-- [Overview](https://yandex.ru/support/tracker/en/automation)
+- [Automations](https://yandex.ru/support/tracker/en/automation)
   - [Setting up a trigger](https://yandex.ru/support/tracker/en/user/create-trigger)
     - [Trigger conditions](https://yandex.ru/support/tracker/en/user/set-condition)
     - [Trigger actions](https://yandex.ru/support/tracker/en/user/set-action)
@@ -284,25 +206,16 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
     - [Running a macro](https://yandex.ru/support/tracker/en/manager/run-macro)
     - [Examples](https://yandex.ru/support/tracker/en/manager/macros-example)
   - [Variables](https://yandex.ru/support/tracker/en/user/vars)
-
-### Issue and comment templates
-
-- [Overview](https://yandex.ru/support/tracker/en/user/ticket-template)
+- [Issue and comment templates](https://yandex.ru/support/tracker/en/user/ticket-template)
   - [Creating a template](https://yandex.ru/support/tracker/en/user/create-template)
   - [Editing a template](https://yandex.ru/support/tracker/en/user/edit-template)
   - [Deleting a template](https://yandex.ru/support/tracker/en/user/delete-template)
   - [Using shared templates](https://yandex.ru/support/tracker/en/user/share-template)
   - [Using a form as a template for creating issues](https://yandex.ru/support/tracker/en/manager/attach-form)
-
-### Configuring an SLA for issues
-
-- [Overview](https://yandex.ru/support/tracker/en/sla-head)
+- [Configuring an SLA for issues](https://yandex.ru/support/tracker/en/sla-head)
   - [Configuring rules](https://yandex.ru/support/tracker/en/manager/sla)
   - [Work schedule](https://yandex.ru/support/tracker/en/manager/schedule)
-
-### Integration with other services
-
-- [Overview](https://yandex.ru/support/tracker/en/manager/integrations)
+- [Integration with other services](https://yandex.ru/support/tracker/en/manager/integrations)
   - [Email](https://yandex.ru/support/tracker/en/manager/queue-mail)
   - [Yandex Forms](https://yandex.ru/support/tracker/en/manager/about-forms-integration)
     - [Creating a form in Yandex Tracker](https://yandex.ru/support/tracker/en/user/forms-template)
@@ -318,46 +231,258 @@ For REST API work, start with [tracker-api.md](tracker-api.md) and [documentatio
   - [Setting up links to external applications](https://yandex.ru/support/tracker/en/external-links)
     - [Setting up an external application](https://yandex.ru/support/tracker/en/ext-app-setup)
     - [Sending your application data to the Yandex Tracker team](https://yandex.ru/support/tracker/en/ext-app-info)
-
-### Developer tools
-
-- [Overview](https://yandex.ru/support/tracker/en/user/API)
-
-### API reference
-
-- [Overview](https://yandex.ru/support/tracker/en/api-ref/about-api)
+- [Developer tools](https://yandex.ru/support/tracker/en/user/API)
+- [API reference](https://yandex.ru/support/tracker/en/api-ref/about-api)
   - [API access](https://yandex.ru/support/tracker/en/api-ref/access)
   - [Common request format](https://yandex.ru/support/tracker/en/api-ref/common-format)
   - [Possible response codes](https://yandex.ru/support/tracker/en/api-ref/error-codes)
-
-### Managing a Yandex Cloud organization
-
-- [Overview](https://yandex.ru/support/tracker/en/cloud/overview)
+- [Managing a Yandex Cloud organization](https://yandex.ru/support/tracker/en/cloud/overview)
   - [Setting up a billing account](https://yandex.ru/support/tracker/en/cloud/billing-account)
   - [Paying for Tracker](https://yandex.ru/support/tracker/en/cloud/pay-the-bill)
   - [Viewing payment breakdown and history](https://yandex.ru/support/tracker/en/cloud/check-charges)
   - [Deactivating Tracker](https://yandex.ru/support/tracker/en/cloud/disable-tracker)
-
-### FAQ
-
-- [Overview](https://yandex.ru/support/tracker/en/faq)
-
-### Support
-
-- [Overview](https://yandex.ru/support/tracker/en/feedback)
+- [FAQ](https://yandex.ru/support/tracker/en/faq)
+- [Support](https://yandex.ru/support/tracker/en/feedback)
   - [Copying errors from the browser console](https://yandex.ru/support/tracker/en/browser-console)
   - [Saving browser and server interactions to a HAR file](https://yandex.ru/support/tracker/en/create-har)
 
-## Search Strategy
+## Flat URL List
 
-Search this index first when you know the topic but not the exact page:
-
-```bash
-rg -n "queue|workflow|dashboard|goal|filter|mobile|automation" references/support-docs-index.md
-```
-
-Search the full generated tree when you need the exact menu placement or want to validate coverage:
-
-```bash
-rg -n "keyword" references/tracker-docs-site-map.md
-```
+- https://yandex.ru/support/tracker/en/about-tracker
+- https://yandex.ru/support/tracker/en/access
+- https://yandex.ru/support/tracker/en/add-users
+- https://yandex.ru/support/tracker/en/api-ref/about-api
+- https://yandex.ru/support/tracker/en/api-ref/access
+- https://yandex.ru/support/tracker/en/api-ref/common-format
+- https://yandex.ru/support/tracker/en/api-ref/error-codes
+- https://yandex.ru/support/tracker/en/automation
+- https://yandex.ru/support/tracker/en/browser-console
+- https://yandex.ru/support/tracker/en/cloud/billing-account
+- https://yandex.ru/support/tracker/en/cloud/check-charges
+- https://yandex.ru/support/tracker/en/cloud/disable-tracker
+- https://yandex.ru/support/tracker/en/cloud/overview
+- https://yandex.ru/support/tracker/en/cloud/pay-the-bill
+- https://yandex.ru/support/tracker/en/configuration
+- https://yandex.ru/support/tracker/en/create-har
+- https://yandex.ru/support/tracker/en/dashboards-and-widgets
+- https://yandex.ru/support/tracker/en/dev-process
+- https://yandex.ru/support/tracker/en/dev-process-agile
+- https://yandex.ru/support/tracker/en/dev-process-api
+- https://yandex.ru/support/tracker/en/dev-process-automation
+- https://yandex.ru/support/tracker/en/dev-process-create-queue
+- https://yandex.ru/support/tracker/en/dev-process-manage-tickets
+- https://yandex.ru/support/tracker/en/dev-process-repo
+- https://yandex.ru/support/tracker/en/dev-process-templates
+- https://yandex.ru/support/tracker/en/disable-tracker
+- https://yandex.ru/support/tracker/en/enable-tracker
+- https://yandex.ru/support/tracker/en/entities
+- https://yandex.ru/support/tracker/en/ext-app-info
+- https://yandex.ru/support/tracker/en/ext-app-setup
+- https://yandex.ru/support/tracker/en/external-links
+- https://yandex.ru/support/tracker/en/faq
+- https://yandex.ru/support/tracker/en/feedback
+- https://yandex.ru/support/tracker/en/gantt/list-of-projects
+- https://yandex.ru/support/tracker/en/gantt/overview
+- https://yandex.ru/support/tracker/en/gantt/portfolio
+- https://yandex.ru/support/tracker/en/gantt/project
+- https://yandex.ru/support/tracker/en/gantt/queue
+- https://yandex.ru/support/tracker/en/gantt/search
+- https://yandex.ru/support/tracker/en/glossary
+- https://yandex.ru/support/tracker/en/goals/goals-list
+- https://yandex.ru/support/tracker/en/goals/goals-settings
+- https://yandex.ru/support/tracker/en/goals/goals-start
+- https://yandex.ru/support/tracker/en/guides
+- https://yandex.ru/support/tracker/en/how-to-use
+- https://yandex.ru/support/tracker/en/hr-process
+- https://yandex.ru/support/tracker/en/hr-process-basic-queue
+- https://yandex.ru/support/tracker/en/hr-process-candidate-queue
+- https://yandex.ru/support/tracker/en/hr-process-employment-queue
+- https://yandex.ru/support/tracker/en/hr-process-general-queue
+- https://yandex.ru/support/tracker/en/hr-process-probation-queue
+- https://yandex.ru/support/tracker/en/hr-process-vacancy-queue
+- https://yandex.ru/support/tracker/en/hr-process-vacations-queue
+- https://yandex.ru/support/tracker/en/import
+- https://yandex.ru/support/tracker/en/local-fields
+- https://yandex.ru/support/tracker/en/manager/about-forms-integration
+- https://yandex.ru/support/tracker/en/manager/access
+- https://yandex.ru/support/tracker/en/manager/add-ticket-type
+- https://yandex.ru/support/tracker/en/manager/agile
+- https://yandex.ru/support/tracker/en/manager/agile-access
+- https://yandex.ru/support/tracker/en/manager/agile-columns
+- https://yandex.ru/support/tracker/en/manager/agile-create
+- https://yandex.ru/support/tracker/en/manager/agile-issues
+- https://yandex.ru/support/tracker/en/manager/agile-set-board
+- https://yandex.ru/support/tracker/en/manager/attach-form
+- https://yandex.ru/support/tracker/en/manager/backlog
+- https://yandex.ru/support/tracker/en/manager/backward-compatibility
+- https://yandex.ru/support/tracker/en/manager/boards-instruments
+- https://yandex.ru/support/tracker/en/manager/boards-project
+- https://yandex.ru/support/tracker/en/manager/bulk-change
+- https://yandex.ru/support/tracker/en/manager/burndown-diagram
+- https://yandex.ru/support/tracker/en/manager/components
+- https://yandex.ru/support/tracker/en/manager/create-agile-sprint
+- https://yandex.ru/support/tracker/en/manager/create-macroses
+- https://yandex.ru/support/tracker/en/manager/create-portfolio
+- https://yandex.ru/support/tracker/en/manager/create-project
+- https://yandex.ru/support/tracker/en/manager/create-queue
+- https://yandex.ru/support/tracker/en/manager/create-resolution
+- https://yandex.ru/support/tracker/en/manager/delete-queue
+- https://yandex.ru/support/tracker/en/manager/edit-queue-general
+- https://yandex.ru/support/tracker/en/manager/epic
+- https://yandex.ru/support/tracker/en/manager/forms-integration
+- https://yandex.ru/support/tracker/en/manager/history
+- https://yandex.ru/support/tracker/en/manager/integrations
+- https://yandex.ru/support/tracker/en/manager/macros-example
+- https://yandex.ru/support/tracker/en/manager/mail-notifications
+- https://yandex.ru/support/tracker/en/manager/manage-forms
+- https://yandex.ru/support/tracker/en/manager/milestones
+- https://yandex.ru/support/tracker/en/manager/my-projects
+- https://yandex.ru/support/tracker/en/manager/poker
+- https://yandex.ru/support/tracker/en/manager/portfolio
+- https://yandex.ru/support/tracker/en/manager/project-list
+- https://yandex.ru/support/tracker/en/manager/project-new
+- https://yandex.ru/support/tracker/en/manager/queue-access
+- https://yandex.ru/support/tracker/en/manager/queue-access-bulk
+- https://yandex.ru/support/tracker/en/manager/queue-access-examples
+- https://yandex.ru/support/tracker/en/manager/queue-history
+- https://yandex.ru/support/tracker/en/manager/queue-integrations
+- https://yandex.ru/support/tracker/en/manager/queue-mail
+- https://yandex.ru/support/tracker/en/manager/queue-spent-time
+- https://yandex.ru/support/tracker/en/manager/queue-team
+- https://yandex.ru/support/tracker/en/manager/quick-filters
+- https://yandex.ru/support/tracker/en/manager/run-macro
+- https://yandex.ru/support/tracker/en/manager/schedule
+- https://yandex.ru/support/tracker/en/manager/sla
+- https://yandex.ru/support/tracker/en/manager/trigger-examples
+- https://yandex.ru/support/tracker/en/manager/versions
+- https://yandex.ru/support/tracker/en/manager/work-process
+- https://yandex.ru/support/tracker/en/manager/workflow
+- https://yandex.ru/support/tracker/en/manager/workflow-action-edit
+- https://yandex.ru/support/tracker/en/manager/workflow-status-edit
+- https://yandex.ru/support/tracker/en/messenger
+- https://yandex.ru/support/tracker/en/mobile
+- https://yandex.ru/support/tracker/en/mobile/agile-boards
+- https://yandex.ru/support/tracker/en/mobile/attach-file
+- https://yandex.ru/support/tracker/en/mobile/checklist
+- https://yandex.ru/support/tracker/en/mobile/comments
+- https://yandex.ru/support/tracker/en/mobile/create-filter
+- https://yandex.ru/support/tracker/en/mobile/create-queue
+- https://yandex.ru/support/tracker/en/mobile/create-ticket
+- https://yandex.ru/support/tracker/en/mobile/default-filters
+- https://yandex.ru/support/tracker/en/mobile/edit-ticket
+- https://yandex.ru/support/tracker/en/mobile/faves
+- https://yandex.ru/support/tracker/en/mobile/history
+- https://yandex.ru/support/tracker/en/mobile/login
+- https://yandex.ru/support/tracker/en/mobile/notifications
+- https://yandex.ru/support/tracker/en/mobile/personal
+- https://yandex.ru/support/tracker/en/mobile/queue-change
+- https://yandex.ru/support/tracker/en/mobile/reminder
+- https://yandex.ru/support/tracker/en/mobile/run-macro
+- https://yandex.ru/support/tracker/en/mobile/ticket-links
+- https://yandex.ru/support/tracker/en/mobile/time-spent
+- https://yandex.ru/support/tracker/en/mobile/votes
+- https://yandex.ru/support/tracker/en/pricing
+- https://yandex.ru/support/tracker/en/queue-intro
+- https://yandex.ru/support/tracker/en/quick-start
+- https://yandex.ru/support/tracker/en/role-model
+- https://yandex.ru/support/tracker/en/search-issues
+- https://yandex.ru/support/tracker/en/sla-head
+- https://yandex.ru/support/tracker/en/structure
+- https://yandex.ru/support/tracker/en/support-process
+- https://yandex.ru/support/tracker/en/support-process-create-queue
+- https://yandex.ru/support/tracker/en/support-process-dashboards
+- https://yandex.ru/support/tracker/en/support-process-group
+- https://yandex.ru/support/tracker/en/support-process-integration
+- https://yandex.ru/support/tracker/en/support-process-mail-forms
+- https://yandex.ru/support/tracker/en/support-process-send-mail
+- https://yandex.ru/support/tracker/en/support-process-sla
+- https://yandex.ru/support/tracker/en/telegram
+- https://yandex.ru/support/tracker/en/user/API
+- https://yandex.ru/support/tracker/en/user/add-repository
+- https://yandex.ru/support/tracker/en/user/attach-file
+- https://yandex.ru/support/tracker/en/user/autoaction-example
+- https://yandex.ru/support/tracker/en/user/bitbucket
+- https://yandex.ru/support/tracker/en/user/chat
+- https://yandex.ru/support/tracker/en/user/checklist
+- https://yandex.ru/support/tracker/en/user/clone
+- https://yandex.ru/support/tracker/en/user/comments
+- https://yandex.ru/support/tracker/en/user/copy-dashboard
+- https://yandex.ru/support/tracker/en/user/copy-widget
+- https://yandex.ru/support/tracker/en/user/create-autoaction
+- https://yandex.ru/support/tracker/en/user/create-dashboard
+- https://yandex.ru/support/tracker/en/user/create-filter
+- https://yandex.ru/support/tracker/en/user/create-param
+- https://yandex.ru/support/tracker/en/user/create-template
+- https://yandex.ru/support/tracker/en/user/create-ticket
+- https://yandex.ru/support/tracker/en/user/create-ticket-by-mail
+- https://yandex.ru/support/tracker/en/user/create-ticket-with-forms
+- https://yandex.ru/support/tracker/en/user/create-trigger
+- https://yandex.ru/support/tracker/en/user/created-and-resolved
+- https://yandex.ru/support/tracker/en/user/cycle-time
+- https://yandex.ru/support/tracker/en/user/dashboard
+- https://yandex.ru/support/tracker/en/user/dashboard-reports
+- https://yandex.ru/support/tracker/en/user/default-filters
+- https://yandex.ru/support/tracker/en/user/delete-template
+- https://yandex.ru/support/tracker/en/user/edit-dashboard
+- https://yandex.ru/support/tracker/en/user/edit-template
+- https://yandex.ru/support/tracker/en/user/edit-ticket
+- https://yandex.ru/support/tracker/en/user/events
+- https://yandex.ru/support/tracker/en/user/export-to-doc
+- https://yandex.ru/support/tracker/en/user/favourites
+- https://yandex.ru/support/tracker/en/user/flow
+- https://yandex.ru/support/tracker/en/user/forms-template
+- https://yandex.ru/support/tracker/en/user/github
+- https://yandex.ru/support/tracker/en/user/gitlab
+- https://yandex.ru/support/tracker/en/user/history
+- https://yandex.ru/support/tracker/en/user/hotkeys
+- https://yandex.ru/support/tracker/en/user/issues-stat
+- https://yandex.ru/support/tracker/en/user/login
+- https://yandex.ru/support/tracker/en/user/markup
+- https://yandex.ru/support/tracker/en/user/move-ticket
+- https://yandex.ru/support/tracker/en/user/my-tickets
+- https://yandex.ru/support/tracker/en/user/note
+- https://yandex.ru/support/tracker/en/user/notification-constructor
+- https://yandex.ru/support/tracker/en/user/notification-digest
+- https://yandex.ru/support/tracker/en/user/notification-telegram
+- https://yandex.ru/support/tracker/en/user/notifications
+- https://yandex.ru/support/tracker/en/user/personal
+- https://yandex.ru/support/tracker/en/user/push-notifications
+- https://yandex.ru/support/tracker/en/user/query-filter
+- https://yandex.ru/support/tracker/en/user/queue
+- https://yandex.ru/support/tracker/en/user/quick-guide
+- https://yandex.ru/support/tracker/en/user/reminder
+- https://yandex.ru/support/tracker/en/user/reports
+- https://yandex.ru/support/tracker/en/user/search-task
+- https://yandex.ru/support/tracker/en/user/see-workflow
+- https://yandex.ru/support/tracker/en/user/set-action
+- https://yandex.ru/support/tracker/en/user/set-condition
+- https://yandex.ru/support/tracker/en/user/share-dashboard
+- https://yandex.ru/support/tracker/en/user/share-template
+- https://yandex.ru/support/tracker/en/user/startpage
+- https://yandex.ru/support/tracker/en/user/startpage-dashboard
+- https://yandex.ru/support/tracker/en/user/summary-table
+- https://yandex.ru/support/tracker/en/user/summary-table-with-totals
+- https://yandex.ru/support/tracker/en/user/syntax-yfm
+- https://yandex.ru/support/tracker/en/user/tasks
+- https://yandex.ru/support/tracker/en/user/ticket-access
+- https://yandex.ru/support/tracker/en/user/ticket-cancel
+- https://yandex.ru/support/tracker/en/user/ticket-in-progress
+- https://yandex.ru/support/tracker/en/user/ticket-links
+- https://yandex.ru/support/tracker/en/user/ticket-report
+- https://yandex.ru/support/tracker/en/user/ticket-schedule
+- https://yandex.ru/support/tracker/en/user/ticket-template
+- https://yandex.ru/support/tracker/en/user/time-spent
+- https://yandex.ru/support/tracker/en/user/time-spent-report
+- https://yandex.ru/support/tracker/en/user/vars
+- https://yandex.ru/support/tracker/en/user/velocity
+- https://yandex.ru/support/tracker/en/user/votes
+- https://yandex.ru/support/tracker/en/user/widgets
+- https://yandex.ru/support/tracker/en/user/wiki
+- https://yandex.ru/support/tracker/en/working-with-issues
+- https://yandex.ru/support/tracker/en/wysiwyg/block-format
+- https://yandex.ru/support/tracker/en/wysiwyg/diagrams
+- https://yandex.ru/support/tracker/en/wysiwyg/file
+- https://yandex.ru/support/tracker/en/wysiwyg/html-block
+- https://yandex.ru/support/tracker/en/wysiwyg/images
+- https://yandex.ru/support/tracker/en/wysiwyg/links
+- https://yandex.ru/support/tracker/en/wysiwyg/tables-format

@@ -3,9 +3,9 @@
 Minimal Yandex Tracker API helper.
 
 Examples:
-  TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
-  TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
-  TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
+  TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
+  TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
+  TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
       --method POST --data '{"filter": {"queue": "TEST"}}'
 """
 
@@ -52,8 +52,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--org-id",
-        default=os.environ.get("TRACKER_ORG_ID"),
-        help="Yandex 360 organization ID. Defaults to TRACKER_ORG_ID.",
+        default=os.environ.get("TRACKER_TRACKER_ORG_ID") or os.environ.get("TRACKER_ORG_ID"),
+        help="Yandex 360 organization ID. Defaults to TRACKER_TRACKER_ORG_ID or TRACKER_ORG_ID.",
     )
     parser.add_argument(
         "--cloud-org-id",

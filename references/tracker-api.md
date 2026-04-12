@@ -107,7 +107,7 @@ Use for newer planning entities:
 
 ## Common Request Templates
 
-For live calls from this skill, use `scripts/tracker_api.py` with environment variables such as `TRACKER_OAUTH_TOKEN`, `TRACKER_IAM_TOKEN`, `TRACKER_ORG_ID`, and `TRACKER_CLOUD_ORG_ID`.
+For live calls from this skill, use `scripts/tracker_api.py` with environment variables such as `TRACKER_TOKEN`, `TRACKER_OAUTH_TOKEN`, `TRACKER_IAM_TOKEN`, `TRACKER_TRACKER_ORG_ID`, `TRACKER_ORG_ID`, and `TRACKER_CLOUD_ORG_ID`.
 
 ### Search Issues
 
@@ -165,4 +165,4 @@ Expect these categories:
 - `423` when a resource is locked
 - `429` for throttling
 
-Check the official error-code page when a response shape matters.
+If a response shape matters, rely on this repository's local markdown references and report uncertainty explicitly when they are insufficient.

@@ -5,7 +5,7 @@ description: "Manage Yandex Tracker spaces through the REST API. Use when Codex 
 
 # Yandex Tracker
 
-Use this skill to work with a Yandex Tracker space through the public API and its documentation.
+Use this skill to work with a Yandex Tracker space through the public API and the local markdown references in this repository.
 
 ## Read Order
 
@@ -13,46 +13,47 @@ Choose the documentation source by task type:
 
 1. For Tracker product behavior and UI workflows, start with [references/support-docs-index.md](references/support-docs-index.md).
 2. For REST API work, start with [references/tracker-api.md](references/tracker-api.md), then use [references/documentation-pages.md](references/documentation-pages.md) to jump to the exact API family or method page.
-3. For the actual article text, follow the official support page link from [references/support-docs-index.md](references/support-docs-index.md).
-4. If a support page looks wrong, stale, too short, or suspicious, check [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) for canonical route guidance before trusting it.
+3. Do not browse the live Tracker site. Use only the local markdown files under `references/` and this `SKILL.md`.
+4. If the local markdown looks incomplete, search the local repository references instead of falling back to external docs.
 
 ## Which File To Read First
 
 Use this routing table before answering a user task:
 
 - queue setup, permissions, local fields, components, versions, mail integration, workflow editing:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Queues and Queue Administration" section, then the exact official support page link
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Configuring queues" section
 - issue creation and daily work such as editing, moving, comments, attachments, links, checklists, reminders, votes, history, and time spent:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Everyday Work With Issues" section, then the exact official support page link
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Working with issues" section
 - issue search, filters, favorites, summaries, and list views:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Search, Filters, Lists, and Views" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Finding issues" section
 - dashboards, widgets, reports, and monitoring:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Dashboards, Widgets, and Reports" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Dashboards and widgets" section and "Reports" when needed
 - automation, triggers, auto actions, macros, notifications, and mail notifications:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Automation, Triggers, Macros, and Notifications" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Automations" section and "Notifications and subscriptions" when needed
 - agile boards, sprints, burndown, planning poker, and board permissions:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Agile Boards, Sprints, Planning, and Estimation" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Managing issues using an Agile board" section
 - projects, portfolios, goals, epics, milestones, and gantt:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Projects, Portfolios, Goals, Milestones, and Gantt" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Projects, portfolios, and goals" section and "Gantt chart" when needed
 - templates, forms, mail intake, and form integrations:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Templates, Forms, and Intake" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Issue and comment templates" section and "Integration with other services" when needed
 - markdown, YFM, tables, diagrams, images, embedded content, and rich formatting:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Markdown and Rich Content" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Working with issues" section under "Editing text"
 - mobile app or Messenger behavior:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Mobile and Messenger" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Yandex Tracker mobile app" section
 - imports, developer tools, troubleshooting, browser console, HAR, and support diagnostics:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Import, External Links, API, and Troubleshooting" section
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Developer tools" section, "Integration with other services" section, and "Enabling and managing access" for import-related setup
 - API endpoints, headers, payloads, permissions, pagination, transitions, or field schemas:
-  read [references/tracker-api.md](references/tracker-api.md) first, then [references/documentation-pages.md](references/documentation-pages.md), then the exact official API page
+  read [references/tracker-api.md](references/tracker-api.md) first, then [references/documentation-pages.md](references/documentation-pages.md)
 
-Use [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) whenever a support page route might be stale. Note that `manager/create-project.html` and `manager/access.html` are historical aliases; prefer their canonical pages noted in that file.
+Use [references/tracker-docs-site-map.md](references/tracker-docs-site-map.md) when you need the full product-doc hierarchy or need to verify where a page sits in the menu.
+Use [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) only for notes about the local capture process. It is not a permission to browse the live support site.
 
 ## Workflow
 
 1. Identify the organization context before proposing requests.
 2. Confirm the auth mode and required headers.
 3. Choose the narrowest API resource that matches the task.
-4. Prefer reading local references before browsing docs again.
+4. Use only local markdown references from this repository.
 5. When making changes, explain the exact request shape, required permissions, and likely failure modes.
 
 ## Confirm Context
@@ -102,9 +103,11 @@ Read [references/tracker-api.md](references/tracker-api.md) for the core API con
 - resource families
 - common flows and pitfalls
 
-Read [references/documentation-pages.md](references/documentation-pages.md) when you need the relevant documentation page quickly. It groups the official docs by task area and links to the section roots and representative method pages.
+Read [references/documentation-pages.md](references/documentation-pages.md) when you need the relevant API family quickly. It groups the documented API surface by task area and preserves the route names for orientation.
 
-Read [references/support-docs-index.md](references/support-docs-index.md) when the task is about using Tracker itself rather than just calling the API. It maps user tasks to the official English support pages.
+Read [references/support-docs-index.md](references/support-docs-index.md) when the task is about using Tracker itself rather than just calling the API. It mirrors the current left-menu hierarchy from the captured product docs.
+
+Read [references/tracker-docs-site-map.md](references/tracker-docs-site-map.md) when you need the complete expanded tree or want to verify whether a page exists in the captured docs.
 
 Use [scripts/tracker_api.py](scripts/tracker_api.py) for real API calls. It is a stdlib-only CLI helper that:
 
@@ -150,7 +153,7 @@ Apply these rules consistently:
 
 ### Full-API Requests
 
-When a task references a less common API area, do not fall back to generic guidance. Open the matching section from [references/documentation-pages.md](references/documentation-pages.md), identify the exact method page, and answer against that page.
+When a task references a less common API area, do not fall back to generic guidance. Open the matching section from [references/documentation-pages.md](references/documentation-pages.md), identify the exact method area, and answer from the local references.
 
 ## Output Style
 
@@ -160,22 +163,22 @@ When answering a Tracker task:
 - list the required headers
 - show the minimal request body
 - mention any Tracker-specific caveat such as transitions, pagination, optimistic locking, or permissions
-- link the official documentation page when the request depends on details that may change
+- cite the local markdown file that the answer relies on
 
 ## Script Examples
 
 Use the helper script for repeatable live calls:
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /myself
 ```
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/TEST-1
 ```
 
 ```bash
-TRACKER_OAUTH_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
+TRACKER_TOKEN=... TRACKER_TRACKER_ORG_ID=... ./scripts/tracker_api.py /issues/_search \
   --method POST \
   --data '{"filter":{"queue":"TEST"}}'
 ```
