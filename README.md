@@ -6,6 +6,8 @@ Skill and helper script for working with Yandex Tracker through the public REST 
 
 - `SKILL.md` defines the skill behavior, routing rules, and documentation workflow.
 - `scripts/tracker_api.py` is a stdlib-only CLI for authenticated Tracker API requests.
+- `scripts/tracker_scenario.py` runs reusable JSON-described API scenarios with variables, saved outputs, and assertions.
+- `examples/` contains ready-to-run scenario files.
 - `references/tracker-api.md` summarizes the core API contract and common pitfalls.
 - `references/documentation-pages.md` maps API task areas to the local API reference index.
 - `references/support-docs-index.md` maps product and UI questions to the current locally captured support-doc hierarchy.
@@ -60,6 +62,56 @@ The helper script:
 - supports `--method`, `--query`, `--data`, `--data-file`, `--header`, `--raw`, and `--include-status`
 - pretty-prints JSON responses by default
 - exits non-zero on HTTP errors and still prints the error body
+
+## `tracker_scenario.py`
+
+Use the scenario runner when a task is better expressed as a repeatable workflow than as one-off `curl` commands.
+
+What it supports:
+
+- scenario file in JSON
+- `{{var}}` substitution from environment, scenario vars, and `--var key=value`
+- multiple sequential steps
+- per-step request method, path, query, headers, body, or `body_file`
+- status assertions and simple JSON-path-like assertions
+- saving response values into variables for later steps
+- conditional cleanup steps via `when`
+
+Example:
+
+```bash
+TRACKER_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_scenario.py \
+  examples/entities-project-in-portfolio.json \
+  --var portfolio_id=123456 \
+  --var project_summary="Infrastructure rollout" \
+  --var delete_after_create=true
+```
+
+Minimal scenario shape:
+
+```json
+{
+  "name": "Example scenario",
+  "vars": {
+    "issue_key": "TEST-1"
+  },
+  "steps": [
+    {
+      "name": "Read issue",
+      "request": {
+        "method": "GET",
+        "path": "/issues/{{issue_key}}"
+      },
+      "expect": {
+        "status": 200,
+        "json": {
+          "$.key": "TEST-1"
+        }
+      }
+    }
+  ]
+}
+```
 
 ## Documentation Workflow
 

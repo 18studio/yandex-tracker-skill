@@ -105,6 +105,17 @@ Use for newer planning entities:
 - entity events
 - entity search with field expansion
 
+### Entities API Quick Notes
+
+These shapes are worth treating as the local default until the docs provide a more explicit per-entity schema reference:
+
+- Read a portfolio by id with `GET /v3/entities/portfolio/<id>`.
+- Create a project with `POST /v3/entities/project`.
+- For project creation, put business fields inside `{"fields": {...}}`.
+- To attach a project to a portfolio, set `fields.parentEntity` to the portfolio entity id.
+- Do not assume `GET /v3/entities/project/<id>` returns enough business fields to reconstruct a valid create payload.
+- If `GET /entities/project/<id>` only returns wrapper metadata, use entity search or another expanded entity endpoint from the local docs before guessing field names.
+
 ## Common Request Templates
 
 For live calls from this skill, use `scripts/tracker_api.py` with environment variables such as `TRACKER_TOKEN`, `TRACKER_OAUTH_TOKEN`, `TRACKER_IAM_TOKEN`, `TRACKER_TRACKER_ORG_ID`, `TRACKER_ORG_ID`, and `TRACKER_CLOUD_ORG_ID`.
@@ -153,6 +164,110 @@ Content-Type: application/json
 
 Use this pattern when a task asks to change status.
 
+### Read Portfolio Entity
+
+```http
+GET /v3/entities/portfolio/<portfolio-id>
+Authorization: OAuth <token>
+X-Org-ID: <org-id>
+```
+
+This is the singular entity route. Do not switch it to `/portfolios/`.
+
+CLI example:
+
+```bash
+TRACKER_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /entities/portfolio/<portfolio-id>
+```
+
+cURL example:
+
+```bash
+curl -sS \
+  -H "Authorization: OAuth $TRACKER_TOKEN" \
+  -H "X-Org-ID: $TRACKER_ORG_ID" \
+  "https://api.tracker.yandex.net/v3/entities/portfolio/<portfolio-id>"
+```
+
+### Create Project In Portfolio
+
+```http
+POST /v3/entities/project
+Authorization: OAuth <token>
+X-Org-ID: <org-id>
+Content-Type: application/json
+
+{
+  "fields": {
+    "summary": "Infrastructure rollout",
+    "parentEntity": "<portfolio-id>"
+  }
+}
+```
+
+Known-safe rules from live usage:
+
+- `summary` belongs inside `fields`.
+- portfolio linkage is `parentEntity`, not `portfolio`, `portfolioId`, or `parent`.
+- top-level payloads without `fields` can produce misleading validation errors.
+
+CLI example:
+
+```bash
+TRACKER_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /entities/project \
+  --method POST \
+  --data '{"fields":{"summary":"Infrastructure rollout","parentEntity":"<portfolio-id>"}}'
+```
+
+cURL example:
+
+```bash
+curl -sS \
+  -X POST \
+  -H "Authorization: OAuth $TRACKER_TOKEN" \
+  -H "X-Org-ID: $TRACKER_ORG_ID" \
+  -H "Content-Type: application/json" \
+  --data '{"fields":{"summary":"Infrastructure rollout","parentEntity":"<portfolio-id>"}}' \
+  "https://api.tracker.yandex.net/v3/entities/project"
+```
+
+### Delete Mistakenly Created Project
+
+```http
+DELETE /v3/entities/project/<project-id>
+Authorization: OAuth <token>
+X-Org-ID: <org-id>
+```
+
+CLI example:
+
+```bash
+TRACKER_TOKEN=... TRACKER_ORG_ID=... ./scripts/tracker_api.py /entities/project/<project-id> \
+  --method DELETE
+```
+
+cURL example:
+
+```bash
+curl -sS \
+  -X DELETE \
+  -H "Authorization: OAuth $TRACKER_TOKEN" \
+  -H "X-Org-ID: $TRACKER_ORG_ID" \
+  "https://api.tracker.yandex.net/v3/entities/project/<project-id>"
+```
+
+## Entity-Field Caveats
+
+The local reference set currently explains the Entities API family, but does not provide a reliable field matrix with concrete create bodies for every entity type.
+
+Treat these points as operational guidance:
+
+- `project`: locally confirmed working fields include `summary` and `parentEntity` inside `fields`.
+- `portfolio`: local docs confirm the entity family, but this repository does not currently contain a verified minimal create/update body example.
+- `goal`: local docs confirm the entity family, but this repository does not currently contain a verified minimal create/update body example.
+
+When exact field availability matters for `portfolio` or `goal`, do not invent a body from the generic `/fields` family. Use the local entity docs plus a safe read/search flow to confirm the shape first.
+
 ## Error Patterns
 
 Expect these categories:
@@ -166,3 +281,5 @@ Expect these categories:
 - `429` for throttling
 
 If a response shape matters, rely on this repository's local markdown references and report uncertainty explicitly when they are insufficient.
+
+Entities API errors can be especially misleading. Invalid nesting may be reported as a problem with `fields` or `summary` even when the real issue is a wrong parent-link field or an incorrect top-level payload shape.

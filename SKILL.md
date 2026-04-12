@@ -117,6 +117,13 @@ Use [scripts/tracker_api.py](scripts/tracker_api.py) for real API calls. It is a
 - supports `--method`, `--query`, `--data`, `--data-file`, `--header`, and `--raw`
 - reads credentials from environment variables when present
 
+Use [scripts/tracker_scenario.py](scripts/tracker_scenario.py) when the task is a repeatable multi-step API workflow rather than a single request. It supports:
+
+- JSON-described scenarios under `examples/` or user-created files
+- `{{var}}` substitution from env, scenario vars, and CLI `--var key=value`
+- sequential steps with assertions and saved response values
+- conditional cleanup steps through `when`
+
 ## Request Rules
 
 Apply these rules consistently:
@@ -127,6 +134,10 @@ Apply these rules consistently:
 - Use POST-based search endpoints for complex issue and entity searches.
 - For attachments, account for the temporary upload step before attaching to an issue or comment.
 - Respect Tracker permissions. API tokens act with the same rights as the represented user.
+- For `POST /entities/project`, send business data under `{"fields": {...}}`, not at the top level.
+- For linking a project to a portfolio, use `fields.parentEntity` with the portfolio entity id.
+- For direct entity reads, prefer singular routes such as `/entities/project/<id>` and `/entities/portfolio/<id>`.
+- Do not assume `GET /entities/project/<id>` returns the full business payload. When field shape matters, use entity search or another expanded read path from the local docs.
 
 ## Common Tasks
 
@@ -150,6 +161,7 @@ Apply these rules consistently:
 
 - work with projects, portfolios, and goals through the Entities API
 - search entities and fetch expanded field payloads
+- for project creation inside a portfolio, start from the known-safe shape in [references/tracker-api.md](references/tracker-api.md) instead of inferring field names ad hoc
 
 ### Full-API Requests
 

@@ -1,0 +1,64 @@
+{
+  "name": "Create project in portfolio and optionally clean it up",
+  "vars": {
+    "project_summary": "Infrastructure rollout",
+    "delete_after_create": "false"
+  },
+  "steps": [
+    {
+      "id": "read_portfolio",
+      "name": "Read portfolio",
+      "request": {
+        "method": "GET",
+        "path": "/entities/portfolio/{{portfolio_id}}"
+      },
+      "expect": {
+        "status": 200
+      }
+    },
+    {
+      "id": "create_project",
+      "name": "Create project",
+      "request": {
+        "method": "POST",
+        "path": "/entities/project",
+        "body": {
+          "fields": {
+            "summary": "{{project_summary}}",
+            "parentEntity": "{{portfolio_id}}"
+          }
+        }
+      },
+      "expect": {
+        "status": [
+          200,
+          201
+        ],
+        "json": {
+          "$.id": {
+            "exists": true
+          }
+        }
+      },
+      "save": {
+        "created_project_id": "$.id"
+      }
+    },
+    {
+      "id": "delete_project",
+      "name": "Delete created project",
+      "when": "{{delete_after_create}}",
+      "request": {
+        "method": "DELETE",
+        "path": "/entities/project/{{created_project_id}}"
+      },
+      "expect": {
+        "status": [
+          200,
+          202,
+          204
+        ]
+      }
+    }
+  ]
+}
