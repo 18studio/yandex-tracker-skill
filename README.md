@@ -8,8 +8,7 @@ Skill and helper script for working with Yandex Tracker through the public REST 
 - `scripts/tracker_api.py` is a stdlib-only CLI for authenticated Tracker API requests.
 - `references/tracker-api.md` summarizes the core API contract and common pitfalls.
 - `references/documentation-pages.md` maps API task areas to official documentation pages.
-- `references/support-docs-index.md` maps product and UI questions to the local support-site mirror.
-- `references/support-site/en/` contains mirrored English support documentation pages.
+- `references/support-docs-index.md` maps product and UI questions to the official support documentation pages.
 
 ## Requirements
 
@@ -68,7 +67,7 @@ Use the local references before re-fetching external docs:
 1. Read `references/tracker-api.md` for API mechanics, headers, and update semantics.
 2. Read `references/documentation-pages.md` to find the exact API family or method page.
 3. Read `references/support-docs-index.md` for product behavior and UI workflows.
-4. Open the matching mirrored page in `references/support-site/en/` when the task depends on support documentation details.
+4. Follow the matching official support page link from `references/support-docs-index.md` when the task depends on product documentation details.
 
 ## Notes
 

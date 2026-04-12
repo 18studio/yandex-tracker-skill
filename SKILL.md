@@ -13,17 +13,17 @@ Choose the documentation source by task type:
 
 1. For Tracker product behavior and UI workflows, start with [references/support-docs-index.md](references/support-docs-index.md).
 2. For REST API work, start with [references/tracker-api.md](references/tracker-api.md), then use [references/documentation-pages.md](references/documentation-pages.md) to jump to the exact API family or method page.
-3. For the actual article text, open the local mirrored HTML file under `references/support-site/en/` that is referenced from [references/support-docs-index.md](references/support-docs-index.md).
-4. If a mirrored file looks wrong, stale, too short, or suspicious, check [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) before trusting it.
+3. For the actual article text, follow the official support page link from [references/support-docs-index.md](references/support-docs-index.md).
+4. If a support page looks wrong, stale, too short, or suspicious, check [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) for canonical route guidance before trusting it.
 
 ## Which File To Read First
 
 Use this routing table before answering a user task:
 
 - queue setup, permissions, local fields, components, versions, mail integration, workflow editing:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Queues and Queue Administration" section, then the exact HTML page under `references/support-site/en/manager/`
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Queues and Queue Administration" section, then the exact official support page link
 - issue creation and daily work such as editing, moving, comments, attachments, links, checklists, reminders, votes, history, and time spent:
-  read [references/support-docs-index.md](references/support-docs-index.md), then the "Everyday Work With Issues" section, then the exact HTML page under `references/support-site/en/user/`
+  read [references/support-docs-index.md](references/support-docs-index.md), then the "Everyday Work With Issues" section, then the exact official support page link
 - issue search, filters, favorites, summaries, and list views:
   read [references/support-docs-index.md](references/support-docs-index.md), then the "Search, Filters, Lists, and Views" section
 - dashboards, widgets, reports, and monitoring:
@@ -45,7 +45,7 @@ Use this routing table before answering a user task:
 - API endpoints, headers, payloads, permissions, pagination, transitions, or field schemas:
   read [references/tracker-api.md](references/tracker-api.md) first, then [references/documentation-pages.md](references/documentation-pages.md), then the exact official API page
 
-Use [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) whenever a mirrored support page might be stale. Note that `references/support-site/en/manager/create-project.html` and `references/support-site/en/manager/access.html` are local backfilled aliases of their canonical English pages, so they are safe to read locally.
+Use [references/support-docs-mirror-status.md](references/support-docs-mirror-status.md) whenever a support page route might be stale. Note that `manager/create-project.html` and `manager/access.html` are historical aliases; prefer their canonical pages noted in that file.
 
 ## Workflow
 
@@ -104,7 +104,7 @@ Read [references/tracker-api.md](references/tracker-api.md) for the core API con
 
 Read [references/documentation-pages.md](references/documentation-pages.md) when you need the relevant documentation page quickly. It groups the official docs by task area and links to the section roots and representative method pages.
 
-Read [references/support-docs-index.md](references/support-docs-index.md) when the task is about using Tracker itself rather than just calling the API. It maps user tasks to the mirrored English support pages stored locally under `references/support-site/en/`.
+Read [references/support-docs-index.md](references/support-docs-index.md) when the task is about using Tracker itself rather than just calling the API. It maps user tasks to the official English support pages.
 
 Use [scripts/tracker_api.py](scripts/tracker_api.py) for real API calls. It is a stdlib-only CLI helper that:
 

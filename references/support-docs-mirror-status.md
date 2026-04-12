@@ -1,43 +1,26 @@
-# Tracker Support Mirror Status
+# Tracker Support Docs Status
 
-The local support mirror is stored under `references/support-site/en/`.
+This repository no longer stores local HTML copies of the Yandex Tracker support site.
 
-## Current Snapshot
+## Current State
 
-- language: English
-- source root: `https://yandex.ru/support/tracker/en/`
-- mirrored HTML pages: 191
-- refresh method for anti-bot pages: `playwright-skill` via live browser fetch on 2026-04-12
-- known captcha markers remaining in mirror: 0
-- known 404 pages remaining in mirror: 0
+- local HTML pages in repo: 0
+- support reference source: `https://yandex.ru/support/tracker/en/`
+- local support reference file: `references/support-docs-index.md`
+- migration date: 2026-04-12
 
-## Mirror Health
+## Historical Aliases
 
-Most pages now contain the real article body. A Playwright refresh replaced the previously captured captcha pages for the main problematic URLs.
+Two legacy English routes have been seen in older references. Prefer the canonical pages:
 
-## Alias Backfills
-
-Two saved paths do not currently have stable live English routes, so the local mirror stores canonical English article content under these legacy paths:
-
-- `references/support-site/en/manager/create-project.html`
-- `references/support-site/en/manager/access.html`
-
-Backfill sources:
-
-- `references/support-site/en/manager/create-project.html` was backfilled from `references/support-site/en/manager/project-new.html`
-- `references/support-site/en/manager/access.html` was backfilled from `references/support-site/en/access.html`
-
-Each of these files starts with an HTML comment documenting the canonical source page and save timestamp.
+- `manager/create-project.html` -> `manager/project-new.html`
+- `manager/access.html` -> `access.html`
 
 ## How To Handle A Suspicious Page
 
-If a mirrored page looks wrong:
+If a support page looks wrong or stale:
 
-1. Read the nearest overview page from [support-docs-index.md](support-docs-index.md).
-2. Prefer the canonical neighboring page for the same feature area.
-3. Search the mirror with `rg -n "keyword" references/support-site/en`.
-4. Fall back to the live documentation page only when the local mirror remains incomplete.
-
-## Notes
-
-The mirror is intended to be the default source for Tracker product documentation. At the moment, the local English mirror has no known captcha or 404 pages, and the two previously broken paths have been backfilled with canonical content.
+1. Start with [support-docs-index.md](support-docs-index.md).
+2. Prefer the canonical route when an alias is listed above.
+3. Search the local markdown references with `rg -n "keyword" references/*.md SKILL.md README.md`.
+4. Fall back to the live support site only when the markdown references are insufficient.

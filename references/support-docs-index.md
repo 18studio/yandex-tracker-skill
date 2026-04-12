@@ -1,12 +1,12 @@
 # Tracker Support Docs Index
 
-This file maps user tasks to the local mirrored Yandex Tracker support pages stored under `references/support-site/en/`.
+This file maps user tasks to the official Yandex Tracker support pages.
 
 Start here for product documentation. Use [tracker-api.md](tracker-api.md) and [documentation-pages.md](documentation-pages.md) when the task is API-specific.
 
 ## First Read Rule
 
-Choose the narrowest matching group below, then open the listed local HTML files.
+Choose the narrowest matching group below, then open the listed support pages.
 
 If the task spans multiple areas, read in this order:
 
@@ -18,251 +18,257 @@ If the task spans multiple areas, read in this order:
 
 Read these for onboarding, product shape, enabling Tracker, pricing, and high-level concepts:
 
-- `references/support-site/en/index.html`
-- `references/support-site/en/about-tracker.html`
-- `references/support-site/en/quick-start.html`
-- `references/support-site/en/how-to-use.html`
-- `references/support-site/en/configuration.html`
-- `references/support-site/en/structure.html`
-- `references/support-site/en/enable-tracker.html`
-- `references/support-site/en/disable-tracker.html`
-- `references/support-site/en/pricing.html`
-- `references/support-site/en/glossary.html`
-- `references/support-site/en/faq.html`
+- [`index.html`](https://yandex.ru/support/tracker/en/index.html)
+- [`about-tracker.html`](https://yandex.ru/support/tracker/en/about-tracker.html)
+- [`quick-start.html`](https://yandex.ru/support/tracker/en/quick-start.html)
+- [`how-to-use.html`](https://yandex.ru/support/tracker/en/how-to-use.html)
+- [`configuration.html`](https://yandex.ru/support/tracker/en/configuration.html)
+- [`structure.html`](https://yandex.ru/support/tracker/en/structure.html)
+- [`enable-tracker.html`](https://yandex.ru/support/tracker/en/enable-tracker.html)
+- [`disable-tracker.html`](https://yandex.ru/support/tracker/en/disable-tracker.html)
+- [`pricing.html`](https://yandex.ru/support/tracker/en/pricing.html)
+- [`glossary.html`](https://yandex.ru/support/tracker/en/glossary.html)
+- [`faq.html`](https://yandex.ru/support/tracker/en/faq.html)
 
 ## Access, Roles, and Permissions
 
 Read these when the user asks about who can see, edit, administer, or configure Tracker:
 
-- `references/support-site/en/access.html`
-- `references/support-site/en/role-model.html`
-- `references/support-site/en/add-users.html`
-- `references/support-site/en/manager/access.html` is a local backfilled alias of the canonical `references/support-site/en/access.html` page
-- `references/support-site/en/manager/queue-access.html`
-- `references/support-site/en/manager/queue-access-examples.html`
-- `references/support-site/en/manager/queue-access-bulk.html`
-- `references/support-site/en/user/ticket-access.html`
+- [`access.html`](https://yandex.ru/support/tracker/en/access.html)
+- [`role-model.html`](https://yandex.ru/support/tracker/en/role-model.html)
+- [`add-users.html`](https://yandex.ru/support/tracker/en/add-users.html)
+- [`manager/access.html`](https://yandex.ru/support/tracker/en/manager/access.html) is a historical alias; use the canonical [`access.html`](https://yandex.ru/support/tracker/en/access.html) page
+- [`manager/queue-access.html`](https://yandex.ru/support/tracker/en/manager/queue-access.html)
+- [`manager/queue-access-examples.html`](https://yandex.ru/support/tracker/en/manager/queue-access-examples.html)
+- [`manager/queue-access-bulk.html`](https://yandex.ru/support/tracker/en/manager/queue-access-bulk.html)
+- [`user/ticket-access.html`](https://yandex.ru/support/tracker/en/user/ticket-access.html)
 
 ## Queues and Queue Administration
 
 Read these for queue creation, editing, team membership, integrations, local fields, mail, history, and deletion:
 
-- `references/support-site/en/queue-intro.html`
-- `references/support-site/en/local-fields.html`
-- `references/support-site/en/manager/create-queue.html`
-- `references/support-site/en/manager/edit-queue-general.html`
-- `references/support-site/en/manager/queue-team.html`
-- `references/support-site/en/manager/queue-mail.html`
-- `references/support-site/en/manager/queue-integrations.html`
-- `references/support-site/en/manager/queue-spent-time.html`
-- `references/support-site/en/manager/queue-history.html`
-- `references/support-site/en/manager/delete-queue.html`
-- `references/support-site/en/manager/components.html`
-- `references/support-site/en/manager/versions.html`
-- `references/support-site/en/manager/add-ticket-type.html`
-- `references/support-site/en/manager/create-resolution.html`
-- `references/support-site/en/manager/work-process.html`
-- `references/support-site/en/manager/workflow.html`
-- `references/support-site/en/manager/workflow-action-edit.html`
-- `references/support-site/en/manager/workflow-status-edit.html`
+- [`queue-intro.html`](https://yandex.ru/support/tracker/en/queue-intro.html)
+- [`local-fields.html`](https://yandex.ru/support/tracker/en/local-fields.html)
+- [`manager/create-queue.html`](https://yandex.ru/support/tracker/en/manager/create-queue.html)
+- [`manager/edit-queue-general.html`](https://yandex.ru/support/tracker/en/manager/edit-queue-general.html)
+- [`manager/queue-team.html`](https://yandex.ru/support/tracker/en/manager/queue-team.html)
+- [`manager/queue-mail.html`](https://yandex.ru/support/tracker/en/manager/queue-mail.html)
+- [`manager/queue-integrations.html`](https://yandex.ru/support/tracker/en/manager/queue-integrations.html)
+- [`manager/queue-spent-time.html`](https://yandex.ru/support/tracker/en/manager/queue-spent-time.html)
+- [`manager/queue-history.html`](https://yandex.ru/support/tracker/en/manager/queue-history.html)
+- [`manager/delete-queue.html`](https://yandex.ru/support/tracker/en/manager/delete-queue.html)
+- [`manager/components.html`](https://yandex.ru/support/tracker/en/manager/components.html)
+- [`manager/versions.html`](https://yandex.ru/support/tracker/en/manager/versions.html)
+- [`manager/add-ticket-type.html`](https://yandex.ru/support/tracker/en/manager/add-ticket-type.html)
+- [`manager/create-resolution.html`](https://yandex.ru/support/tracker/en/manager/create-resolution.html)
+- [`manager/work-process.html`](https://yandex.ru/support/tracker/en/manager/work-process.html)
+- [`manager/workflow.html`](https://yandex.ru/support/tracker/en/manager/workflow.html)
+- [`manager/workflow-action-edit.html`](https://yandex.ru/support/tracker/en/manager/workflow-action-edit.html)
+- [`manager/workflow-status-edit.html`](https://yandex.ru/support/tracker/en/manager/workflow-status-edit.html)
 
 ## Everyday Work With Issues
 
 Read these for creating, editing, moving, linking, commenting, attaching files, checklists, votes, reminders, time tracking, and history:
 
-- `references/support-site/en/working-with-issues.html`
-- `references/support-site/en/user/quick-guide.html`
-- `references/support-site/en/user/create-ticket.html`
-- `references/support-site/en/user/edit-ticket.html`
-- `references/support-site/en/user/move-ticket.html`
-- `references/support-site/en/user/comments.html`
-- `references/support-site/en/user/attach-file.html`
-- `references/support-site/en/user/checklist.html`
-- `references/support-site/en/user/ticket-links.html`
-- `references/support-site/en/user/votes.html`
-- `references/support-site/en/user/reminder.html`
-- `references/support-site/en/user/time-spent.html`
-- `references/support-site/en/user/history.html`
-- `references/support-site/en/user/clone.html`
-- `references/support-site/en/user/ticket-cancel.html`
-- `references/support-site/en/user/ticket-in-progress.html`
-- `references/support-site/en/user/see-workflow.html`
+- [`working-with-issues.html`](https://yandex.ru/support/tracker/en/working-with-issues.html)
+- [`user/quick-guide.html`](https://yandex.ru/support/tracker/en/user/quick-guide.html)
+- [`user/create-ticket.html`](https://yandex.ru/support/tracker/en/user/create-ticket.html)
+- [`user/edit-ticket.html`](https://yandex.ru/support/tracker/en/user/edit-ticket.html)
+- [`user/move-ticket.html`](https://yandex.ru/support/tracker/en/user/move-ticket.html)
+- [`user/comments.html`](https://yandex.ru/support/tracker/en/user/comments.html)
+- [`user/attach-file.html`](https://yandex.ru/support/tracker/en/user/attach-file.html)
+- [`user/checklist.html`](https://yandex.ru/support/tracker/en/user/checklist.html)
+- [`user/ticket-links.html`](https://yandex.ru/support/tracker/en/user/ticket-links.html)
+- [`user/votes.html`](https://yandex.ru/support/tracker/en/user/votes.html)
+- [`user/reminder.html`](https://yandex.ru/support/tracker/en/user/reminder.html)
+- [`user/time-spent.html`](https://yandex.ru/support/tracker/en/user/time-spent.html)
+- [`user/history.html`](https://yandex.ru/support/tracker/en/user/history.html)
+- [`user/clone.html`](https://yandex.ru/support/tracker/en/user/clone.html)
+- [`user/ticket-cancel.html`](https://yandex.ru/support/tracker/en/user/ticket-cancel.html)
+- [`user/ticket-in-progress.html`](https://yandex.ru/support/tracker/en/user/ticket-in-progress.html)
+- [`user/see-workflow.html`](https://yandex.ru/support/tracker/en/user/see-workflow.html)
 
 ## Search, Filters, Lists, and Views
 
 Read these when the user asks how to find tasks, save filters, configure quick filters, or work with task lists:
 
-- `references/support-site/en/search-issues.html`
-- `references/support-site/en/user/search-task.html`
-- `references/support-site/en/user/create-filter.html`
-- `references/support-site/en/user/default-filters.html`
-- `references/support-site/en/user/query-filter.html`
-- `references/support-site/en/manager/quick-filters.html`
-- `references/support-site/en/user/my-tickets.html`
-- `references/support-site/en/user/favourites.html`
-- `references/support-site/en/user/summary-table.html`
+- [`search-issues.html`](https://yandex.ru/support/tracker/en/search-issues.html)
+- [`user/search-task.html`](https://yandex.ru/support/tracker/en/user/search-task.html)
+- [`user/create-filter.html`](https://yandex.ru/support/tracker/en/user/create-filter.html)
+- [`user/default-filters.html`](https://yandex.ru/support/tracker/en/user/default-filters.html)
+- [`user/query-filter.html`](https://yandex.ru/support/tracker/en/user/query-filter.html)
+- [`manager/quick-filters.html`](https://yandex.ru/support/tracker/en/manager/quick-filters.html)
+- [`user/my-tickets.html`](https://yandex.ru/support/tracker/en/user/my-tickets.html)
+- [`user/favourites.html`](https://yandex.ru/support/tracker/en/user/favourites.html)
+- [`user/summary-table.html`](https://yandex.ru/support/tracker/en/user/summary-table.html)
 
 ## Dashboards, Widgets, and Reports
 
 Read these for dashboards, widgets, reports, copies, sharing, and dashboard-based monitoring:
 
-- `references/support-site/en/dashboards-and-widgets.html`
-- `references/support-site/en/support-process-dashboards.html`
-- `references/support-site/en/user/dashboard.html`
-- `references/support-site/en/user/create-dashboard.html`
-- `references/support-site/en/user/edit-dashboard.html`
-- `references/support-site/en/user/copy-dashboard.html`
-- `references/support-site/en/user/share-dashboard.html`
-- `references/support-site/en/user/startpage-dashboard.html`
-- `references/support-site/en/user/widgets.html`
-- `references/support-site/en/user/reports.html`
-- `references/support-site/en/user/dashboard-reports.html`
-- `references/support-site/en/user/issues-stat.html`
+- [`dashboards-and-widgets.html`](https://yandex.ru/support/tracker/en/dashboards-and-widgets.html)
+- [`support-process-dashboards.html`](https://yandex.ru/support/tracker/en/support-process-dashboards.html)
+- [`user/dashboard.html`](https://yandex.ru/support/tracker/en/user/dashboard.html)
+- [`user/create-dashboard.html`](https://yandex.ru/support/tracker/en/user/create-dashboard.html)
+- [`user/edit-dashboard.html`](https://yandex.ru/support/tracker/en/user/edit-dashboard.html)
+- [`user/copy-dashboard.html`](https://yandex.ru/support/tracker/en/user/copy-dashboard.html)
+- [`user/share-dashboard.html`](https://yandex.ru/support/tracker/en/user/share-dashboard.html)
+- [`user/startpage-dashboard.html`](https://yandex.ru/support/tracker/en/user/startpage-dashboard.html)
+- [`user/widgets.html`](https://yandex.ru/support/tracker/en/user/widgets.html)
+- [`user/reports.html`](https://yandex.ru/support/tracker/en/user/reports.html)
+- [`user/dashboard-reports.html`](https://yandex.ru/support/tracker/en/user/dashboard-reports.html)
+- [`user/issues-stat.html`](https://yandex.ru/support/tracker/en/user/issues-stat.html)
 
 ## Automation, Triggers, Macros, and Notifications
 
 Read these for automation rules, autoactions, triggers, macros, notification construction, and mail workflows:
 
-- `references/support-site/en/automation.html`
-- `references/support-site/en/user/create-trigger.html`
-- `references/support-site/en/user/create-autoaction.html`
-- `references/support-site/en/manager/create-macroses.html`
-- `references/support-site/en/manager/mail-notifications.html`
-- `references/support-site/en/user/notifications.html`
-- `references/support-site/en/user/notification-constructor.html`
-- `references/support-site/en/user/notification-digest.html`
-- `references/support-site/en/user/notification-telegram.html`
-- `references/support-site/en/user/push-notifications.html`
+- [`automation.html`](https://yandex.ru/support/tracker/en/automation.html)
+- [`user/create-trigger.html`](https://yandex.ru/support/tracker/en/user/create-trigger.html)
+- [`user/create-autoaction.html`](https://yandex.ru/support/tracker/en/user/create-autoaction.html)
+- [`manager/create-macroses.html`](https://yandex.ru/support/tracker/en/manager/create-macroses.html)
+- [`manager/mail-notifications.html`](https://yandex.ru/support/tracker/en/manager/mail-notifications.html)
+- [`user/notifications.html`](https://yandex.ru/support/tracker/en/user/notifications.html)
+- [`user/notification-constructor.html`](https://yandex.ru/support/tracker/en/user/notification-constructor.html)
+- [`user/notification-digest.html`](https://yandex.ru/support/tracker/en/user/notification-digest.html)
+- [`user/notification-telegram.html`](https://yandex.ru/support/tracker/en/user/notification-telegram.html)
+- [`user/push-notifications.html`](https://yandex.ru/support/tracker/en/user/push-notifications.html)
 
 ## Agile Boards, Sprints, Planning, and Estimation
 
 Read these for agile boards, columns, backlog behavior, sprints, burndown, planning poker, and board access:
 
-- `references/support-site/en/manager/agile.html`
-- `references/support-site/en/manager/agile-create.html`
-- `references/support-site/en/manager/agile-columns.html`
-- `references/support-site/en/manager/agile-issues.html`
-- `references/support-site/en/manager/agile-set-board.html`
-- `references/support-site/en/manager/agile-access.html`
-- `references/support-site/en/manager/create-agile-sprint.html`
-- `references/support-site/en/manager/burndown-diagram.html`
-- `references/support-site/en/manager/poker.html`
-- `references/support-site/en/manager/boards-instruments.html`
+- [`manager/agile.html`](https://yandex.ru/support/tracker/en/manager/agile.html)
+- [`manager/agile-create.html`](https://yandex.ru/support/tracker/en/manager/agile-create.html)
+- [`manager/agile-columns.html`](https://yandex.ru/support/tracker/en/manager/agile-columns.html)
+- [`manager/agile-issues.html`](https://yandex.ru/support/tracker/en/manager/agile-issues.html)
+- [`manager/agile-set-board.html`](https://yandex.ru/support/tracker/en/manager/agile-set-board.html)
+- [`manager/agile-access.html`](https://yandex.ru/support/tracker/en/manager/agile-access.html)
+- [`manager/create-agile-sprint.html`](https://yandex.ru/support/tracker/en/manager/create-agile-sprint.html)
+- [`manager/burndown-diagram.html`](https://yandex.ru/support/tracker/en/manager/burndown-diagram.html)
+- [`manager/poker.html`](https://yandex.ru/support/tracker/en/manager/poker.html)
+- [`manager/boards-instruments.html`](https://yandex.ru/support/tracker/en/manager/boards-instruments.html)
 
 ## Projects, Portfolios, Goals, Milestones, and Gantt
 
 Read these for higher-level planning objects and progress tracking:
 
-- `references/support-site/en/entities.html`
-- `references/support-site/en/manager/project-new.html`
-- `references/support-site/en/manager/create-project.html` is a local backfilled alias of the canonical `references/support-site/en/manager/project-new.html` page
-- `references/support-site/en/manager/project-list.html`
-- `references/support-site/en/manager/my-projects.html`
-- `references/support-site/en/manager/create-portfolio.html`
-- `references/support-site/en/manager/portfolio.html`
-- `references/support-site/en/goals/goals-start.html`
-- `references/support-site/en/goals/goals-list.html`
-- `references/support-site/en/goals/goals-settings.html`
-- `references/support-site/en/manager/milestones.html`
-- `references/support-site/en/gantt/overview.html`
-- `references/support-site/en/manager/epic.html`
+- [`entities.html`](https://yandex.ru/support/tracker/en/entities.html)
+- [`manager/project-new.html`](https://yandex.ru/support/tracker/en/manager/project-new.html)
+- [`manager/create-project.html`](https://yandex.ru/support/tracker/en/manager/create-project.html) is a historical alias; use the canonical [`manager/project-new.html`](https://yandex.ru/support/tracker/en/manager/project-new.html) page
+- [`manager/project-list.html`](https://yandex.ru/support/tracker/en/manager/project-list.html)
+- [`manager/my-projects.html`](https://yandex.ru/support/tracker/en/manager/my-projects.html)
+- [`manager/create-portfolio.html`](https://yandex.ru/support/tracker/en/manager/create-portfolio.html)
+- [`manager/portfolio.html`](https://yandex.ru/support/tracker/en/manager/portfolio.html)
+- [`goals/goals-start.html`](https://yandex.ru/support/tracker/en/goals/goals-start.html)
+- [`goals/goals-list.html`](https://yandex.ru/support/tracker/en/goals/goals-list.html)
+- [`goals/goals-settings.html`](https://yandex.ru/support/tracker/en/goals/goals-settings.html)
+- [`manager/milestones.html`](https://yandex.ru/support/tracker/en/manager/milestones.html)
+- [`gantt/overview.html`](https://yandex.ru/support/tracker/en/gantt/overview.html)
+- [`manager/epic.html`](https://yandex.ru/support/tracker/en/manager/epic.html)
 
 ## Templates, Forms, and Intake
 
 Read these when the user asks about issue templates, forms, mail-based intake, or form integrations:
 
-- `references/support-site/en/user/ticket-template.html`
-- `references/support-site/en/user/share-template.html`
-- `references/support-site/en/user/forms-template.html`
-- `references/support-site/en/user/create-ticket-with-forms.html`
-- `references/support-site/en/user/create-ticket-by-mail.html`
-- `references/support-site/en/manager/about-forms-integration.html`
-- `references/support-site/en/manager/forms-integration.html`
-- `references/support-site/en/manager/manage-forms.html`
-- `references/support-site/en/manager/attach-form.html`
-- `references/support-site/en/support-process-mail-forms.html`
-- `references/support-site/en/support-process-send-mail.html`
+- [`user/ticket-template.html`](https://yandex.ru/support/tracker/en/user/ticket-template.html)
+- [`user/share-template.html`](https://yandex.ru/support/tracker/en/user/share-template.html)
+- [`user/forms-template.html`](https://yandex.ru/support/tracker/en/user/forms-template.html)
+- [`user/create-ticket-with-forms.html`](https://yandex.ru/support/tracker/en/user/create-ticket-with-forms.html)
+- [`user/create-ticket-by-mail.html`](https://yandex.ru/support/tracker/en/user/create-ticket-by-mail.html)
+- [`manager/about-forms-integration.html`](https://yandex.ru/support/tracker/en/manager/about-forms-integration.html)
+- [`manager/forms-integration.html`](https://yandex.ru/support/tracker/en/manager/forms-integration.html)
+- [`manager/manage-forms.html`](https://yandex.ru/support/tracker/en/manager/manage-forms.html)
+- [`manager/attach-form.html`](https://yandex.ru/support/tracker/en/manager/attach-form.html)
+- [`support-process-mail-forms.html`](https://yandex.ru/support/tracker/en/support-process-mail-forms.html)
+- [`support-process-send-mail.html`](https://yandex.ru/support/tracker/en/support-process-send-mail.html)
 
 ## Development and Support Process Recipes
 
 Read these when the user wants recommended Tracker setup patterns rather than raw feature docs:
 
-- `references/support-site/en/dev-process.html`
-- `references/support-site/en/dev-process-create-queue.html`
-- `references/support-site/en/dev-process-manage-tickets.html`
-- `references/support-site/en/dev-process-templates.html`
-- `references/support-site/en/dev-process-repo.html`
-- `references/support-site/en/dev-process-agile.html`
-- `references/support-site/en/dev-process-automation.html`
-- `references/support-site/en/support-process.html`
-- `references/support-site/en/support-process-group.html`
-- `references/support-site/en/hr-process.html`
-- `references/support-site/en/hr-process-general-queue.html`
+- [`dev-process.html`](https://yandex.ru/support/tracker/en/dev-process.html)
+- [`dev-process-create-queue.html`](https://yandex.ru/support/tracker/en/dev-process-create-queue.html)
+- [`dev-process-manage-tickets.html`](https://yandex.ru/support/tracker/en/dev-process-manage-tickets.html)
+- [`dev-process-templates.html`](https://yandex.ru/support/tracker/en/dev-process-templates.html)
+- [`dev-process-repo.html`](https://yandex.ru/support/tracker/en/dev-process-repo.html)
+- [`dev-process-agile.html`](https://yandex.ru/support/tracker/en/dev-process-agile.html)
+- [`dev-process-automation.html`](https://yandex.ru/support/tracker/en/dev-process-automation.html)
+- [`support-process.html`](https://yandex.ru/support/tracker/en/support-process.html)
+- [`support-process-group.html`](https://yandex.ru/support/tracker/en/support-process-group.html)
+- [`hr-process.html`](https://yandex.ru/support/tracker/en/hr-process.html)
+- [`hr-process-general-queue.html`](https://yandex.ru/support/tracker/en/hr-process-general-queue.html)
 
 ## Import, External Links, API, and Troubleshooting
 
 Read these for imports, API usage, external systems, troubleshooting, and diagnostics:
 
-- `references/support-site/en/import.html`
-- `references/support-site/en/external-links.html`
-- `references/support-site/en/about-api.html`
-- `references/support-site/en/api-ref/about-api.html`
-- `references/support-site/en/user/API.html`
-- `references/support-site/en/browser-console.html`
-- `references/support-site/en/create-har.html`
-- `references/support-site/en/feedback.html`
-- `references/support-site/en/release-notes/index.html`
+- [`import.html`](https://yandex.ru/support/tracker/en/import.html)
+- [`external-links.html`](https://yandex.ru/support/tracker/en/external-links.html)
+- [`about-api.html`](https://yandex.ru/support/tracker/en/about-api.html)
+- [`api-ref/about-api.html`](https://yandex.ru/support/tracker/en/api-ref/about-api.html)
+- [`user/API.html`](https://yandex.ru/support/tracker/en/user/API.html)
+- [`browser-console.html`](https://yandex.ru/support/tracker/en/browser-console.html)
+- [`create-har.html`](https://yandex.ru/support/tracker/en/create-har.html)
+- [`feedback.html`](https://yandex.ru/support/tracker/en/feedback.html)
+- [`release-notes/index.html`](https://yandex.ru/support/tracker/en/release-notes/index.html)
 
 ## Markdown and Rich Content
 
 Read these when the task is about formatting, YFM, rich text, embedded content, diagrams, tables, or attachments inside descriptions/comments:
 
-- `references/support-site/en/user/markup.html`
-- `references/support-site/en/user/syntax-yfm.html`
-- `references/support-site/en/wysiwyg/block-format.html`
-- `references/support-site/en/wysiwyg/diagrams.html`
-- `references/support-site/en/wysiwyg/embed-content.html`
-- `references/support-site/en/wysiwyg/file.html`
-- `references/support-site/en/wysiwyg/html-block.html`
-- `references/support-site/en/wysiwyg/images.html`
-- `references/support-site/en/wysiwyg/links.html`
-- `references/support-site/en/wysiwyg/tables-format.html`
+- [`user/markup.html`](https://yandex.ru/support/tracker/en/user/markup.html)
+- [`user/syntax-yfm.html`](https://yandex.ru/support/tracker/en/user/syntax-yfm.html)
+- [`wysiwyg/block-format.html`](https://yandex.ru/support/tracker/en/wysiwyg/block-format.html)
+- [`wysiwyg/diagrams.html`](https://yandex.ru/support/tracker/en/wysiwyg/diagrams.html)
+- [`wysiwyg/embed-content.html`](https://yandex.ru/support/tracker/en/wysiwyg/embed-content.html)
+- [`wysiwyg/file.html`](https://yandex.ru/support/tracker/en/wysiwyg/file.html)
+- [`wysiwyg/html-block.html`](https://yandex.ru/support/tracker/en/wysiwyg/html-block.html)
+- [`wysiwyg/images.html`](https://yandex.ru/support/tracker/en/wysiwyg/images.html)
+- [`wysiwyg/links.html`](https://yandex.ru/support/tracker/en/wysiwyg/links.html)
+- [`wysiwyg/tables-format.html`](https://yandex.ru/support/tracker/en/wysiwyg/tables-format.html)
 
 ## Mobile and Messenger
 
 Read these only when the user asks about the mobile app or Messenger integration:
 
-- `references/support-site/en/mobile.html`
-- `references/support-site/en/mobile/login.html`
-- `references/support-site/en/mobile/create-ticket.html`
-- `references/support-site/en/mobile/edit-ticket.html`
-- `references/support-site/en/mobile/attach-file.html`
-- `references/support-site/en/mobile/comments.html`
-- `references/support-site/en/mobile/checklist.html`
-- `references/support-site/en/mobile/create-filter.html`
-- `references/support-site/en/mobile/default-filters.html`
-- `references/support-site/en/mobile/notifications.html`
-- `references/support-site/en/mobile/personal.html`
-- `references/support-site/en/mobile/ticket-links.html`
-- `references/support-site/en/mobile/time-spent.html`
-- `references/support-site/en/mobile/run-macro.html`
-- `references/support-site/en/mobile/agile-boards.html`
-- `references/support-site/en/messenger.html`
+- [`mobile.html`](https://yandex.ru/support/tracker/en/mobile.html)
+- [`mobile/login.html`](https://yandex.ru/support/tracker/en/mobile/login.html)
+- [`mobile/create-ticket.html`](https://yandex.ru/support/tracker/en/mobile/create-ticket.html)
+- [`mobile/edit-ticket.html`](https://yandex.ru/support/tracker/en/mobile/edit-ticket.html)
+- [`mobile/attach-file.html`](https://yandex.ru/support/tracker/en/mobile/attach-file.html)
+- [`mobile/comments.html`](https://yandex.ru/support/tracker/en/mobile/comments.html)
+- [`mobile/checklist.html`](https://yandex.ru/support/tracker/en/mobile/checklist.html)
+- [`mobile/create-filter.html`](https://yandex.ru/support/tracker/en/mobile/create-filter.html)
+- [`mobile/default-filters.html`](https://yandex.ru/support/tracker/en/mobile/default-filters.html)
+- [`mobile/notifications.html`](https://yandex.ru/support/tracker/en/mobile/notifications.html)
+- [`mobile/personal.html`](https://yandex.ru/support/tracker/en/mobile/personal.html)
+- [`mobile/ticket-links.html`](https://yandex.ru/support/tracker/en/mobile/ticket-links.html)
+- [`mobile/time-spent.html`](https://yandex.ru/support/tracker/en/mobile/time-spent.html)
+- [`mobile/run-macro.html`](https://yandex.ru/support/tracker/en/mobile/run-macro.html)
+- [`mobile/agile-boards.html`](https://yandex.ru/support/tracker/en/mobile/agile-boards.html)
+- [`messenger.html`](https://yandex.ru/support/tracker/en/messenger.html)
 
-## Search Strategy Inside The Mirror
+## Search Strategy
 
-If the exact page is unclear, search the local mirror first:
+If the exact page is unclear, search this index first, then the local markdown references:
 
 ```bash
-rg --files references/support-site/en | rg 'queue|dashboard|workflow|goal|filter'
+rg -n 'queue|dashboard|workflow|goal|filter' references/support-docs-index.md
 ```
 
 ```bash
-rg -n "project|portfolio|goal|gantt|milestone" references/support-site/en
+rg -n 'project|portfolio|goal|gantt|milestone' references/support-docs-index.md references/documentation-pages.md
 ```
 
 ```bash
-rg -n "trigger|macro|notification|dashboard|widget|workflow" references/support-site/en
+rg -n 'trigger|macro|notification|dashboard|widget|workflow' references/support-docs-index.md references/documentation-pages.md
+```
+
+If nothing obvious matches, search the markdown references directly:
+
+```bash
+rg -n "keyword here" references/*.md SKILL.md README.md
 ```
 
 ## Routing Shortcuts
@@ -290,12 +296,4 @@ Use these shortcuts before opening many files:
 - imports, developer tools, API, and troubleshooting:
   read the "Import, External Links, API, and Troubleshooting" section first
 
-If a page from this index turns out to be stale, verify it against [support-docs-mirror-status.md](support-docs-mirror-status.md) before using it as the primary source.
-rg -n "keyword here" references/support-site/en
-```
-
-## Mirror Status
-
-The local mirror currently contains 191 HTML files from the English Tracker support docs.
-
-Some files contain anti-bot or captcha HTML instead of the article body. Check [support-docs-mirror-status.md](support-docs-mirror-status.md) before relying on a page that looks suspiciously short or unrelated.
+If a support page from this index looks stale or broken, check [support-docs-mirror-status.md](support-docs-mirror-status.md) for the canonical route guidance before relying on it.
