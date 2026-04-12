@@ -10,6 +10,7 @@ Skill and helper script for working with Yandex Tracker through the public REST 
 - `examples/` contains ready-to-run scenario files.
 - `references/tracker-api.md` summarizes the core API contract and common pitfalls.
 - `references/documentation-pages.md` maps API task areas to the local API reference index.
+- `references/recommended-api-scenarios.md` contains the recommended operating scenarios for API integrations.
 - `references/support-docs-index.md` maps product and UI questions to the current locally captured support-doc hierarchy.
 - `references/tracker-docs-site-map.md` is the full Playwright-generated site map of the Tracker documentation menu.
 
@@ -112,6 +113,13 @@ Minimal scenario shape:
   ]
 }
 ```
+
+Recommended starter scenarios:
+
+- `examples/bootstrap-discovery.json` for auth, org, and queue reachability checks
+- `examples/issues-search-and-read.json` for safe issue selection through POST search
+- `examples/issue-transition-check.json` for read-before-transition workflow checks
+- `examples/entities-project-in-portfolio.json` for the locally validated Entities API create flow
 
 ## Documentation Workflow
 

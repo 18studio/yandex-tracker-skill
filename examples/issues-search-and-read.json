@@ -1,0 +1,44 @@
+{
+  "name": "Search issues and read the first match",
+  "vars": {
+    "queue": "TEST"
+  },
+  "steps": [
+    {
+      "id": "search_issues",
+      "name": "Search issues in queue",
+      "request": {
+        "method": "POST",
+        "path": "/issues/_search",
+        "body": {
+          "filter": {
+            "queue": "{{queue}}"
+          },
+          "perPage": 1
+        }
+      },
+      "expect": {
+        "status": 200,
+        "json": {
+          "$[0].key": {
+            "exists": true
+          }
+        }
+      },
+      "save": {
+        "first_issue_key": "$[0].key"
+      }
+    },
+    {
+      "id": "read_issue",
+      "name": "Read the first matching issue",
+      "request": {
+        "method": "GET",
+        "path": "/issues/{{first_issue_key}}"
+      },
+      "expect": {
+        "status": 200
+      }
+    }
+  ]
+}

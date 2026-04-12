@@ -1,0 +1,33 @@
+{
+  "name": "Bootstrap Tracker API access and queue discovery",
+  "steps": [
+    {
+      "id": "current_user",
+      "name": "Read current user",
+      "request": {
+        "method": "GET",
+        "path": "/myself"
+      },
+      "expect": {
+        "status": 200
+      },
+      "save": {
+        "myself_login": "$.login"
+      }
+    },
+    {
+      "id": "queues",
+      "name": "List queues",
+      "request": {
+        "method": "GET",
+        "path": "/queues",
+        "query": {
+          "perPage": 100
+        }
+      },
+      "expect": {
+        "status": 200
+      }
+    }
+  ]
+}

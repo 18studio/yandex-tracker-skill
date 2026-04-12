@@ -1,0 +1,30 @@
+{
+  "name": "Read issue and inspect available transitions",
+  "vars": {
+    "issue_key": "TEST-1"
+  },
+  "steps": [
+    {
+      "id": "read_issue",
+      "name": "Read issue",
+      "request": {
+        "method": "GET",
+        "path": "/issues/{{issue_key}}"
+      },
+      "expect": {
+        "status": 200
+      }
+    },
+    {
+      "id": "read_transitions",
+      "name": "Read available transitions",
+      "request": {
+        "method": "GET",
+        "path": "/issues/{{issue_key}}/transitions"
+      },
+      "expect": {
+        "status": 200
+      }
+    }
+  ]
+}
