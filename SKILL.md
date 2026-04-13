@@ -56,6 +56,17 @@ Use [references/support-docs-mirror-status.md](references/support-docs-mirror-st
 4. Use only local markdown references from this repository.
 5. When making changes, explain the exact request shape, required permissions, and likely failure modes.
 
+## Operating Principles
+
+Use these working rules whenever the task involves live Tracker changes:
+
+- Prefer stdlib-only tooling from this repository. Use [scripts/tracker_api.py](scripts/tracker_api.py) and [scripts/tracker_scenario.py](scripts/tracker_scenario.py) before suggesting ad hoc scripts with external dependencies.
+- Do not assume Tracker field shapes from UI labels or common REST conventions. Verify the exact payload shape for each non-trivial field before scaling to bulk updates.
+- Separate discovery, mutation, and verification. Read first, change second, verify third.
+- Prefer small, reversible batches over one long bulk run.
+- If a multi-step update partially succeeds, inspect actual Tracker state before retrying anything.
+- When a user asks for large structural changes, preserve existing issue keys and entity ids when possible; prefer reclassification over delete-and-recreate.
+
 ## Confirm Context
 
 Collect these inputs when they are not already available:
@@ -66,6 +77,28 @@ Collect these inputs when they are not already available:
 - target resource: issue, queue, board, dashboard, entity, user, field, or bulk operation
 
 If the request is ambiguous, infer the smallest safe operation first, such as read-only inspection or search.
+
+## Practical Playbook
+
+Follow this sequence for work that changes issues, links, projects, portfolios, or boards:
+
+1. Discover the current state with read-only calls.
+2. Validate one field or one relationship on a single object.
+3. Promote the confirmed payload shape into a small batch.
+4. Verify the batch by reading objects back by key or id.
+5. Only then continue with the next batch.
+
+For risky changes, prefer this split:
+
+- create with the smallest valid payload
+- patch additional fields afterward
+- verify the final shape with a read call
+
+For search-dependent workflows:
+
+- treat search as a convenience, not as the only source of truth
+- if `_search` is unstable for the task, fall back to known issue keys or known entity ids
+- prefer deterministic key-by-key verification after bulk updates
 
 ## Coverage
 
@@ -139,6 +172,121 @@ Apply these rules consistently:
 - For direct entity reads, prefer singular routes such as `/entities/project/<id>` and `/entities/portfolio/<id>`.
 - Do not assume `GET /entities/project/<id>` returns the full business payload. When field shape matters, use entity search or another expanded read path from the local docs.
 
+## Field Shape Rules
+
+Tracker often rejects "obvious" payloads for complex fields. Treat field encoding as a first-class concern.
+
+- For object-backed fields, expect nested objects such as `{"id":"..."}` or `{"key":"..."}`, not bare strings.
+- For multi-value relations, expect arrays of objects, not a single scalar.
+- Validate each field independently before combining several complex fields in one create or patch request.
+- When a field fails with `400` or `422`, remove all optional fields, re-add them one by one, and keep the first confirmed working shape.
+
+Examples that were validated in practice:
+
+- `project`: `{"id":"28"}`
+- `epic`: `{"key":"DEV-2"}`
+- `sprint`: `[{"id":"4"}]`
+
+Do not generalize one field's shape to another field family without checking the docs or a live test.
+
+## Search Rules
+
+Issue and entity search endpoints can be sensitive to body shape.
+
+- Prefer documented structured JSON bodies over free-form query strings.
+- When debugging a failing search, first reduce the request to the smallest filter that should match.
+- If a bulk workflow depends on `_search` and the endpoint starts returning `400`, do not keep retrying the same shape blindly.
+- Fall back to stable identifiers such as known issue keys, project ids, portfolio ids, or entity ids.
+- For high-confidence verification, read objects directly by key or id after mutation.
+
+## Create And Patch Strategy
+
+Use a conservative write strategy for create-heavy workflows:
+
+- create issues and entities with the smallest payload that is known to pass validation
+- add secondary fields in follow-up `PATCH` requests
+- keep links, sprint assignment, epic assignment, and other relationship-like updates separate when possible
+- avoid "all fields at once" payloads unless the exact shape was already confirmed in this Tracker space
+
+This is the default response to `422 Unprocessable Entity`: simplify the payload, confirm the base create works, then layer fields back in.
+
+## Bulk Safety Rules
+
+For mass renames, rescheduling, migration, or portfolio reshaping:
+
+- never rely on a single long-running script as the only control mechanism
+- break work into small batches
+- verify each batch before proceeding
+- if a script stops mid-run, inspect actual state before rerunning anything
+- avoid blind retries that can duplicate issues, duplicate links, or overwrite correct fields
+- prefer short verification passes keyed by known issue keys or entity ids
+
+If a process appears to hang:
+
+- assume partial success is possible
+- verify a sample of target objects immediately
+- continue with targeted follow-up scripts rather than rerunning the full batch
+
+## Links And Dependencies
+
+Treat issue links as a separate API surface, not as a normal issue field.
+
+- Create links through `/issues/<key>/links`.
+- Use the documented `relationship` value, for example `dependsOn`.
+- Test one link first before creating many links.
+- Read links back after creation to confirm both direction and link id.
+- Delete incorrect links only through their concrete link id, not by patching the issue body.
+
+Example create shape:
+
+```json
+{"relationship":"dependsOn","issue":"DEV-16"}
+```
+
+Example delete path shape:
+
+```text
+DELETE /issues/DEV-15/links/49
+```
+
+## Boards And Sprints
+
+Do not assume every board that looks agile in the UI supports sprint API methods.
+
+- Verify the target board type before planning sprint operations.
+- If the API reports that the board type cannot have sprints, stop using that board for sprint automation.
+- Keep project boards for reporting or visualization if needed, but use a sprint-capable board for delivery planning.
+
+## Projects, Portfolios, And Entities
+
+Entity APIs are less predictable than issue APIs. Use stable identifiers and verify business fields explicitly.
+
+- Prefer known project ids, portfolio ids, and entity ids over repeated lookup by title.
+- After updates, verify fields such as dates, parent linkage, and ids instead of relying only on `summary`.
+- When creating projects in a portfolio, start from the safe payload shape documented in local references and extend cautiously.
+
+## Error Handling
+
+Use HTTP status codes as debugging signals, not just failures:
+
+- `400 Bad Request`: likely wrong endpoint shape, malformed search body, unsupported board operation, or invalid field encoding.
+- `422 Unprocessable Entity`: endpoint accepted the request form, but one or more field values or combinations are invalid for this queue or entity type.
+
+Recommended response:
+
+1. Reduce the request to the smallest possible body.
+2. Reintroduce complex fields one at a time.
+3. Read back the resulting object after each successful mutation.
+4. Preserve the working payload shape for reuse in the next batch.
+
+## Environment Constraints
+
+Assume the runtime may be minimal.
+
+- Do not depend on `requests` being installed.
+- Prefer `scripts/tracker_api.py`, `scripts/tracker_scenario.py`, or stdlib-based `urllib.request` for diagnostics and automation.
+- If the environment lacks a convenience library, adapt the script instead of blocking on package installation.
+
 ## Common Tasks
 
 ### Issues
@@ -175,6 +323,9 @@ When answering a Tracker task:
 - list the required headers
 - show the minimal request body
 - mention any Tracker-specific caveat such as transitions, pagination, optimistic locking, or permissions
+- explain whether the operation should be tested first on one issue, one entity, or one board before bulk rollout
+- if field shape is non-obvious, call it out explicitly instead of implying a generic JSON patch will work
+- if the request is bulk or high-risk, include a verification step and fallback plan
 - cite the local markdown file that the answer relies on
 
 ## Script Examples

@@ -137,6 +137,11 @@ Use only the local markdown references:
 - Complex searches usually go through POST-based search endpoints.
 - Attachments often require a temporary upload step before linking them to an issue or comment.
 - API permissions match the rights of the represented user.
+- Complex fields such as project, epic, and sprint often require nested object payloads rather than simple strings or numbers.
+- For mass updates, validate one object first, then roll out in small batches with read-after-write verification.
+- Links and dependencies are managed through dedicated `/links` endpoints and removed by link id, not by patching the issue body.
+- Not every board supports sprint APIs; verify board capabilities before automating sprint assignment.
+- Prefer stdlib-only tooling in this repository over external Python dependencies such as `requests`.
 
 ## License
 
